@@ -1,6 +1,6 @@
-import logo from "../Assets/logo anim.png";
-import toggle from "../Assets/Icons/Toogle.png";
-import menu from "../Assets/Icons/Menu.png";
+import logo from "../Icons/logo anim.png";
+import toggle from "../Icons/Toogle.png";
+import menu from "../Icons/Menu.png";
 import "./Header.css";
 
 const Header = () => {
