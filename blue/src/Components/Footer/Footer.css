@@ -1,5 +1,12 @@
 .footerPage {
   background-color: #0000ff;
+  padding: 32px 24px 32px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+.footerText {
+  gap: 32px;
 }
 .footerText h1 {
   font-family: Supreme;
@@ -8,7 +15,6 @@
   line-height: 62px;
   letter-spacing: 0px;
   text-align: left;
-  border: 2px solid #000000;
   color: transparent;
   -webkit-text-stroke: 0.188rem rgba(0, 0, 0, 1);
 }
@@ -17,4 +23,84 @@
   text-decoration: line-through 2px;
   text-decoration-line: line-through;
   text-decoration-color: #000000;
+}
+.footerButton {
+  width: 108px;
+  height: 108px;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 100%;
+  font-family: Supreme;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.016em;
+  text-align: center;
+}
+.footerSerAndSoc {
+  display: flex;
+  gap: 68px;
+}
+
+.footerMenu {
+  font-family: Supreme;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 34px;
+  letter-spacing: 0.04em;
+  text-align: left;
+  color: #000000;
+}
+
+.footerSocList {
+  font-family: Supreme;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 34px;
+  letter-spacing: 1px;
+  text-align: left;
+  color: #000000;
+}
+.instagram,
+.facebook {
+  display: flex;
+  gap: 10px;
+}
+
+.lastFooter,
+.footerMenu,
+.footerSocList,
+.mailPhone,
+.footerText {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footerMenu {
+  gap: 32px;
+}
+.footerSocList {
+  justify-content: center;
+}
+.lastFooter {
+  gap: 16px;
+}
+
+.lastFooter h2 {
+  font-family: Supreme;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 2px;
+  text-align: left;
+  color: #000000;
+}
+.lastFooter a {
+  font-family: Supreme;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 1px;
+  text-align: left;
 }

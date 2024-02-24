@@ -3,13 +3,12 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Supreme", sans-serif;
-  color: var(--white-to-black);
+  color: black;
   text-decoration: none;
   transition-duration: 0.5s;
 }
 
 :root {
-  --black-to-white: black;
   --white-to-black: white;
   --home_page-background: rgb(0, 0, 0, 0.7);
   --navbar_background: rgb(0, 0, 0, 0.9);
@@ -29,4 +28,11 @@
   --scrollbar-thumb-bg-color: black;
   --transparent_text_border: black;
   --black-to-transparent: transparent;
+}
+
+a,
+li,
+ul {
+  text-decoration: none;
+  list-style-type: none;
 }
