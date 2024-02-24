@@ -1,12 +1,12 @@
 import "./App.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Layout from "./Layouts/Layout";
-import Home from "./Pages/Home";
-import Contact from "./Pages/Contact";
+import Home from "./Pages/Home/Home";
+import Contact from "./Pages/Contact/Contact";
 // import Header from "./Components/Header";
-import About from "./Pages/About";
-import Services from "./Pages/Services";
-import Portfolio from "./Pages/Portfolio";
+import About from "./Pages/About/About";
+import Services from "./Pages/Services/Services";
+import Portfolio from "./Pages/Portfolio/Portfolio";
 
 function App() {
   return (

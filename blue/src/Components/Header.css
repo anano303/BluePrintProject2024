@@ -12,6 +12,7 @@
 .icons {
   display: flex;
   gap: 8px;
+  align-items: center;
 }
 .toggle {
   width: 40px;
