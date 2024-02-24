@@ -1,3 +1,20 @@
 .footerPage {
-  background-color: rgb(23, 23, 139);
+  background-color: #0000ff;
+}
+.footerText h1 {
+  font-family: Supreme;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 62px;
+  letter-spacing: 0px;
+  text-align: left;
+  border: 2px solid #000000;
+  color: transparent;
+  -webkit-text-stroke: 0.188rem rgba(0, 0, 0, 1);
+}
+.footerText span {
+  color: #000000;
+  text-decoration: line-through 2px;
+  text-decoration-line: line-through;
+  text-decoration-color: #000000;
 }
