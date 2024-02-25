@@ -125,6 +125,7 @@
 .contIcons {
   display: flex;
   position: fixed;
+  z-index: 99;
   top: 5px;
   left: 5px;
   background-color: rgba(8, 28, 145, 0.5);
