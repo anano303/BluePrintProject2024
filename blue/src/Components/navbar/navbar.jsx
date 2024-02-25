@@ -1,43 +1,116 @@
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
+
+// const Navbar = () => {
+
+//   return (
+//     <div>
+//       <ul>
+//         <li>
+//           <Link to={"/"}>Home</Link>
+//         </li>
+//         <li>
+//           <Link to={"/contact"}>Contact</Link>
+//         </li>
+//         <li>
+//           <Link to={"/about"}>About</Link>
+//         </li>
+//         <li>
+//           <Link to={"/services"}>Services</Link>
+//         </li>
+//         <li>
+//           <Link to={"/portfolio"}>Portfolio</Link>
+//         </li>
+//       </ul>
+//     </div>
+//   );
+// };
+
+// export default Navbar;
+
+// import { useState } from 'react';
+// import { Link } from 'react-router-dom';
+// import './navbar.css'
+
+// const Navbar = () => {
+//   const [showLinks, setShowLinks] = useState(false);
+
+//   const toggleLinks = () => {
+//     setShowLinks(!showLinks);
+//   };
+
+//   return (
+//     <div className="navbar">
+//       <div className="toggle-button" onClick={toggleLinks}>
+//         {showLinks ? 'X' : '='}
+//       </div>
+//       {showLinks && (
+//         <ul className="links">
+//           <li>
+//             <Link to="/">Home</Link>
+//           </li>
+//           <li>
+//             <Link to="/contact">Contact</Link>
+//           </li>
+//           <li>
+//             <Link to="/about">About</Link>
+//           </li>
+//           <li>
+//             <Link to="/services">Services</Link>
+//           </li>
+//           <li>
+//             <Link to="/portfolio">Portfolio</Link>
+//           </li>
+//         </ul>
+//       )}
+//     </div>
+//   );
+// };
+
+// export default Navbar;
+// Navbar.jsx
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import './navbar.css';
+import closeImage from '../Icons/X.png';
+import toggleImage from '../Icons/Menu.png';
 
 const Navbar = () => {
-  const navStyle = {
-    position: "fixed", // Set the position to fixed
-    top: 0, // Stick it to the top of the viewport
-    width: "100%", // Make it span the full width
-    padding: "50px 550px", // Example padding
-    // boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)', // Example shadow
-    zIndex: 1000, // Set a high z-index to ensure it's above other content
-  };
+  const [showLinks, setShowLinks] = useState(false);
 
-  const ulStyle = {
-    listStyleType: "none",
-    margin: 0,
-    padding: 0,
-  };
-  const liStyle = {
-    marginLeft: "10px", // Adjust spacing between navbar items
+  const toggleLinks = () => {
+    setShowLinks(!showLinks);
   };
 
   return (
-    <div style={navStyle}>
-      <ul style={ulStyle}>
-        <li style={liStyle}>
-          <Link to={"/"}>Home</Link>
-        </li>
-        <li style={liStyle}>
-          <Link to={"/contact"}>Contact</Link>
-        </li>
-        <li style={liStyle}>
-          <Link to={"/about"}>About</Link>
-        </li>
-        <li style={liStyle}>
-          <Link to={"/services"}>Services</Link>
-        </li>
-        <li style={liStyle}>
-          <Link to={"/portfolio"}>Portfolio</Link>
-        </li>
-      </ul>
+    <div>
+
+    <div className={`navbar ${showLinks ? '' : 'hidden'}`}>
+      
+      {showLinks && (
+        <ul className="links">
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/contact">Contact</Link>
+          </li>
+          <li>
+            <Link to="/about">About</Link>
+          </li>
+          <li>
+            <Link to="/services">Services</Link>
+          </li>
+          <li>
+            <Link to="/portfolio">Portfolio</Link>
+          </li>
+        </ul>
+      )}
+ </div>
+ 
+<div className="toggle-button" onClick={toggleLinks}>
+  <img src={showLinks ? closeImage : toggleImage} alt="Toggle" /> {/* Use appropriate images */}
+</div>
+   
     </div>
   );
 };

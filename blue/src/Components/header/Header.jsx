@@ -1,20 +1,73 @@
-import logo from "../Icons/logo anim.png";
-import toggle from "../Icons/Toogle.png";
-import menu from "../Icons/Menu.png";
-import "./Header.css";
+
+import React from 'react';
+import Navbar from '../navbar/navbar'; 
+import logo from '../Icons/logo anim.png';
+import './Header.css';
+import { ThemeContext } from '../../ThemeContext.js'
+import { LanguageContext } from "../../LanguageContext.js";
+import { TEXTS } from "../../Languages.js";
+import { useContext } from "react";
+
+
 
 const Header = () => {
+  const  {language} = useContext(LanguageContext);
+
+  const themeContext = useContext(ThemeContext);
+  const langContext = useContext(LanguageContext);
+
+  const ligthOnClick = () => {
+    themeContext.setTheme("light");
+  };
+  const darkOnClick = () => {
+    themeContext.setTheme("dark");
+  }; 
+  const geoOnClick  = () => {
+      langContext.setLanguage("ge");
+  };
+  const enOnClick  = () => {
+      langContext.setLanguage("en");   
+  };
+
   return (
+
     <div className="headerPage">
       <div>
-        {" "}
         <img src={logo} alt="logo" className="logo" />
       </div>
-      <div className="icons">
-        <img src={toggle} alt="toggle" className="toggle" />
-        <img src={menu} alt="menu" className="menu" />
+      <Navbar />
+      <div>
+      <div className="contIcons">
+        <div className='ThemeMainDiv'>
+          <div
+            className={
+              "lightMode " + (themeContext.theme === "light" ? "unvisible" : "")
+            }
+            onClick={ligthOnClick}
+          > </div> 
+
+          <div
+            className={
+              "darkMode " + (themeContext.theme === "dark" ? "unvisible" : "")
+            }
+            onClick={darkOnClick}
+          ></div>
+        </div>
+        <div className='MainLangDiv'>
+            <div 
+                className={"GeoFlag " + (langContext.language === "ge" ? "unvisible" : "")}
+                onClick={geoOnClick}>
+            </div>
+            
+
+            <div 
+            className={"EnFlag " + (langContext.language === "en" ? "unvisible" : "")}
+            onClick={enOnClick} > </div>
+          </div>
       </div>
-    </div>
-  );
-};
+      </div>
+      </div>
+  )
+}
+
 export default Header;
