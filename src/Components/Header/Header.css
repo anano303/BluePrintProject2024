@@ -16,10 +16,7 @@
   gap: 15px;
   align-items: center;
 }
-.toggle {
-  width: 40px;
-  height: 24px;
-}
+
 .menu {
   width: 32px;
   height: 8px;
@@ -82,81 +79,4 @@
 
 .no-decoration {
   text-decoration: none;
-}
-
-.lightMode {
-  background: url(../Icons/Toogle.png) no-repeat;
-  background-size: cover;
-}
-
-.darkMode {
-  background: url(../Icons/Toogle.png) no-repeat;
-  background-size: cover;
-  background-color: rgb(231, 232, 240);
-  border-radius: 50%;
-}
-
-.unvisible {
-  display: none;
-}
-
-.lightMode:hover,
-.darkMode:hover,
-.home:hover {
-  cursor: pointer;
-  transform: scale(1.05);
-  transition: transform 0.2s ease;
-}
-
-.GeoFlag {
-  background: url(../Icons/geFlag.png) no-repeat;
-  background-size: cover;
-}
-
-.EnFlag {
-  background: url(../Icons/enFlag.png) no-repeat;
-  background-size: cover;
-}
-
-.GeoFlag:hover,
-.EnFlag:hover {
-  cursor: pointer;
-  transform: scale(1.05);
-  transition: transform 0.2s ease;
-}
-.contIcons {
-  display: flex;
-  position: fixed;
-  z-index: 99;
-  top: 5px;
-  left: 5px;
-  background-color: rgba(8, 28, 145, 0.5);
-  border-radius: 20%;
-  opacity: 90%;
-  align-items: center;
-  justify-content: center;
-}
-@media screen and (min-width: 768px) {
-  .contIcons {
-    display: flex;
-    flex-direction: column;
-    margin: 0.5%;
-    padding: 0.5%;
-    gap: 5px;
-  }
-}
-
-.ThemeMainDiv {
-  right: 15px;
-  top: 26px;
-  display: flex;
-}
-.MainLangDiv {
-  right: 15px;
-  top: 26px;
-  display: flex;
-}
-.darkLightStyles {
-  width: 24px;
-  height: 25px;
 }

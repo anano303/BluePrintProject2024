@@ -57,7 +57,7 @@ const Navbar = () => {
             </li>
 
             <div className="contIcons">
-              <div className="MainLangDiv">
+              <div className="mainLangDiv">
                 <div
                   className={
                     "GeoFlag " +
@@ -65,7 +65,10 @@ const Navbar = () => {
                   }
                   onClick={geoOnClick}
                 >
-                  <div className="darkLightStyles"></div>
+                  <div className="darkLightStyles">
+                    {" "}
+                    <p>ქართული</p>
+                  </div>
                 </div>
 
                 <div
@@ -75,7 +78,9 @@ const Navbar = () => {
                   }
                   onClick={enOnClick}
                 >
-                  <div className="darkLightStyles"></div>{" "}
+                  <div className="darkLightStyles">
+                    <p> ENGLISH </p>
+                  </div>{" "}
                 </div>
               </div>
             </div>
@@ -96,7 +101,7 @@ const Navbar = () => {
 
           <div
             className={
-              "darkMode " + (themeContext.theme === "dark" ? "unvisible" : "")
+              "darkMode " + (themeContext.theme === "dark" ? "invisible" : "")
             }
             onClick={darkOnClick}
           >

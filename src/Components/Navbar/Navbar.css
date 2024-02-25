@@ -19,12 +19,6 @@
   top: -100%;
 }
 
-/* .toggle {
-  width: 40px;
-  height: 24px;
-  cursor: pointer;
-} */
-
 .toggle-button {
   display: flex;
   align-items: center;
@@ -46,9 +40,10 @@
 .darkMode {
   background: url(../Icons/toggle-on.png) no-repeat;
   background-size: cover;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 24px;
   cursor: pointer;
+  margin-bottom: 5px;
 }
 .invisible {
   display: none;
@@ -63,17 +58,12 @@
   text-align: left;
   transition: max-height 3s ease;
   font-family: "BPGNinoMtavruliNormal", sans-serif;
-  font-size: 56px;
+  font-size: 48px;
   font-weight: 700;
   line-height: 56px;
   letter-spacing: -2px;
   text-align: left;
 }
-
-/* .links li {
-  margin-right: 1rem;
-} */
-
 .links li a {
   text-decoration: none;
   color: #fff; /* Change the color of the links */
@@ -84,6 +74,7 @@
   text-align: left;
   color: white;
 }
+
 .links li .aboutLi {
   color: #0000ff;
   text-decoration: line-through 1px;
@@ -124,39 +115,27 @@
 }
 .contIcons {
   display: flex;
-  position: fixed;
-  z-index: 99;
-  top: 5px;
-  left: 5px;
-  background-color: rgba(8, 28, 145, 0.5);
-  border-radius: 20%;
   opacity: 90%;
-  align-items: center;
-  justify-content: center;
+  margin-top: 50px;
 }
-@media screen and (min-width: 768px) {
-  .contIcons {
-    display: flex;
-    flex-direction: column;
-    margin: 0.5%;
-    padding: 0.5%;
-    gap: 5px;
-  }
-}
-
-.ThemeMainDiv {
+/* .MainLangDiv {
   right: 15px;
   top: 26px;
   display: flex;
-}
-.MainLangDiv {
-  right: 15px;
-  top: 26px;
-  display: flex;
-}
+} */
 .darkLightStyles {
-  width: 24px;
-  height: 25px;
+  width: 30px;
+  height: 29px;
+  position: relative;
+}
+.darkLightStyles p {
+  position: absolute;
+  color: #fff;
+  font-family: "BPGNinoMtavruliNormal", sans-serif;
+  font-size: 18px;
+  top: -14px;
+  left: 60px;
+  letter-spacing: 1px;
 }
 
 @media screen and (min-width: 768px) {
@@ -182,5 +161,13 @@
   .toggle-button {
     top: 50%;
     left: 10px; /* Position toggle button in the upper left corner */
+  }
+
+  .contIcons {
+    display: flex;
+    flex-direction: column;
+    margin: 0.5%;
+    padding: 0.5%;
+    gap: 5px;
   }
 }
