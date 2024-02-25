@@ -7,10 +7,19 @@ import Contact from "./Pages/Contact/Contact";
 import About from "./Pages/About/About";
 import Services from "./Pages/Services/Services";
 import Portfolio from "./Pages/Portfolio/Portfolio";
+import { LanguageContext } from './LanguageContext';
+import { ThemeContext } from './ThemeContext';
+import React, { useState } from 'react';
+
 
 function App() {
+  const [language, setLanguage] = useState('ge');
+    const [theme, setTheme] = useState('light');
+  
   return (
     <div className="App">
+      <LanguageContext.Provider value={{ language, setLanguage }}>
+        <ThemeContext.Provider value={{ theme, setTheme }}>
       <Router>
         <Routes>
           <Route
@@ -55,6 +64,8 @@ function App() {
           />
         </Routes>
       </Router>
+      </ThemeContext.Provider>
+      </LanguageContext.Provider>
     </div>
   );
 }
