@@ -1,0 +1,76 @@
+.homePage {
+  position: relative;
+  background-image: url(../Assets/main.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 32px 24px 32px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+
+.homeText,
+.homeButton {
+  z-index: 2; /* Ensure text is above the overlay */
+  color: #fff; /* Set the text color to white or your desired color */
+}
+
+/* Your existing styles for h1, span, p, and button can remain the same */
+.homeText {
+  margin-top: 80px;
+}
+.homePage h1 {
+  font-family: Supreme;
+
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 56px;
+  letter-spacing: -2px;
+  text-align: left;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 4px;
+}
+.homePage span {
+  color: #0000ff;
+  text-decoration: line-through 1px;
+  text-decoration-line: line-through;
+  text-decoration-color: #0000ff;
+  font-size: 46px;
+  margin-top: 4px;
+}
+.homePage p {
+  margin-top: 10px;
+  font-family: Supreme;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 29px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #ffffff;
+}
+
+.homeButton {
+  width: 108px;
+  height: 108px;
+  background-color: #0000ff;
+  border: none;
+  border-radius: 100%;
+  font-family: Supreme;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 2px;
+  text-align: center;
+}
