@@ -28,34 +28,12 @@ const Header = () => {
 
   return (
     <div className="headerPage">
-      <div>
-        <img src={logo} alt="logo" className="logo" />
-      </div>
+      <img src={logo} alt="logo" className="logo" />
+
       <Navbar />
 
       <div>
         <div className="contIcons">
-          <div className="ThemeMainDiv">
-            <div
-              className={
-                "lightMode " +
-                (themeContext.theme === "light" ? "unvisible" : "")
-              }
-              onClick={ligthOnClick}
-            >
-              <div className="darkLightStyles"></div>
-            </div>
-
-            <div
-              className={
-                "darkMode " + (themeContext.theme === "dark" ? "unvisible" : "")
-              }
-              onClick={darkOnClick}
-            >
-              <div className="darkLightStyles"></div>
-            </div>
-          </div>
-
           <div className="MainLangDiv">
             <div
               className={

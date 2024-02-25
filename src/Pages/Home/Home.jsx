@@ -21,7 +21,8 @@ const Home = () => {
           <span>{TEXTS[language].blueprint}? </span>
         </h1>
         <p>
-        {TEXTS[language].youPlanYourVision}
+          You plan your vision, you plan your purpose that's we call your life
+          blueprint
         </p>
       </div>
       <button className="homeButton"> {TEXTS[language].findOut} </button>

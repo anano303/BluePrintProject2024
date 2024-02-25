@@ -4,18 +4,19 @@
 }
 .aboutPage h3 {
   color: transparent;
-  -webkit-text-stroke: 0.188rem #666666;
+  -webkit-text-stroke: 0.5px #666666;
   display: flex;
   flex-direction: column;
   margin-top: 80px;
-  font-family: Supreme;
-  font-size: 46px;
-  font-weight: 700;
+  font-family: "BPGNinoMtavruliNormal", sans-serif;
+  font-size: 40px;
+  font-weight: 600;
   line-height: 62px;
   letter-spacing: 0px;
   text-align: left;
 }
 .aboutPage span {
+  font-family: "BPGNinoMtavruliNormal", sans-serif;
   color: #0000ff;
   text-decoration: line-through 1px;
   text-decoration-line: line-through;

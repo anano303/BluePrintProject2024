@@ -25,20 +25,22 @@
   height: 8px;
 }  */
 
-/* Header.css */
-
 .headerPage {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #000000; /* Change the background color as needed */
+  background-color: #000000;
   padding: 1rem;
   position: relative;
   padding: 30px 24px 30px 24px;
 }
+.headerIcons {
+  display: flex;
+  justify-content: space-between;
+}
 
 .logo {
-  width: 160px; /* Adjust the width of the logo as needed */
+  width: 160px;
   height: auto;
   cursor: pointer;
   position: absolute;
@@ -83,12 +85,12 @@
 }
 
 .lightMode {
-  background: url(../Icons/sun-icon.png) no-repeat;
+  background: url(../Icons/Toogle.png) no-repeat;
   background-size: cover;
 }
 
 .darkMode {
-  background: url(../Icons/moon-icon-8.png) no-repeat;
+  background: url(../Icons/Toogle.png) no-repeat;
   background-size: cover;
   background-color: rgb(231, 232, 240);
   border-radius: 50%;
