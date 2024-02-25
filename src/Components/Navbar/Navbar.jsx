@@ -41,9 +41,7 @@ const Navbar = () => {
             <li>
               <Link to="/"> {TEXTS[language].home} </Link>
             </li>
-            <li>
-              <Link to="/contact">{TEXTS[language].contact}</Link>
-            </li>
+
             <li>
               <Link to="/about" className="aboutLi">
                 {TEXTS[language].about}
@@ -54,6 +52,9 @@ const Navbar = () => {
             </li>
             <li>
               <Link to="/portfolio">{TEXTS[language].portfolio}</Link>
+            </li>
+            <li>
+              <Link to="/contact">{TEXTS[language].contact}</Link>
             </li>
 
             <div className="contIcons">
