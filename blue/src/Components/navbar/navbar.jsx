@@ -73,9 +73,17 @@ import { Link } from 'react-router-dom';
 import './navbar.css';
 import closeImage from '../Icons/X.png';
 import toggleImage from '../Icons/Menu.png';
-
+import { useContext } from "react";
+import { TEXTS } from "../../Languages.js";
+import { ThemeContext } from "../../ThemeContext";
+import { LanguageContext } from "../../LanguageContext";
 const Navbar = () => {
   const [showLinks, setShowLinks] = useState(false);
+
+  const  {language} = useContext(LanguageContext);
+
+  const themeContext = useContext(ThemeContext);
+  const langContext = useContext(LanguageContext);
 
   const toggleLinks = () => {
     setShowLinks(!showLinks);
@@ -89,10 +97,10 @@ const Navbar = () => {
       {showLinks && (
         <ul className="links">
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/"> {TEXTS[language].home} </Link>
           </li>
           <li>
-            <Link to="/contact">Contact</Link>
+            <Link to="/contact">{TEXTS[language].contact}</Link>
           </li>
           <li>
             <Link to="/about">About</Link>

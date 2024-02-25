@@ -5,7 +5,7 @@ import logo from '../Icons/logo anim.png';
 import './Header.css';
 import { ThemeContext } from '../../ThemeContext.js'
 import { LanguageContext } from "../../LanguageContext.js";
-import { TEXTS } from "../../Languages.js";
+import { TEXTS } from "../../Languages.js"
 import { useContext } from "react";
 
 
@@ -36,33 +36,41 @@ const Header = () => {
         <img src={logo} alt="logo" className="logo" />
       </div>
       <Navbar />
+      
       <div>
       <div className="contIcons">
-        <div className='ThemeMainDiv'>
+        <div className="ThemeMainDiv">
           <div
             className={
               "lightMode " + (themeContext.theme === "light" ? "unvisible" : "")
             }
             onClick={ligthOnClick}
-          > </div> 
+          > 
+          <div className='darkLightStyles'></div>
+          </div> 
 
           <div
             className={
               "darkMode " + (themeContext.theme === "dark" ? "unvisible" : "")
             }
             onClick={darkOnClick}
-          ></div>
+          >
+            <div className='darkLightStyles'></div>
+          </div>
         </div>
-        <div className='MainLangDiv'>
+
+        <div className="MainLangDiv">
             <div 
                 className={"GeoFlag " + (langContext.language === "ge" ? "unvisible" : "")}
                 onClick={geoOnClick}>
+                 <div className='darkLightStyles'></div>
             </div>
             
 
             <div 
             className={"EnFlag " + (langContext.language === "en" ? "unvisible" : "")}
-            onClick={enOnClick} > </div>
+            onClick={enOnClick} >
+               <div className='darkLightStyles'></div> </div>
           </div>
       </div>
       </div>

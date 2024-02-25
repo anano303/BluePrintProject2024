@@ -85,16 +85,16 @@
 
 
 .lightMode {
-    /* background: url(../Icons/../../Assets/sun-icon.png) no-repeat;
-    background-size: cover; */
-    background-color: yellow;
+    background: url(../Icons/../../Assets/sun-icon.png) no-repeat;
+    background-size: cover;
 
 }
 
 .darkMode {
-    /* background: url(../../Assets/moon-icon-8.png) no-repeat;
-    background-size: cover; */
-    background-color: brown;
+    background: url(../../Assets/moon-icon-8.png) no-repeat;
+    background-size: cover;
+    background-color: rgb(231, 232, 240);
+    border-radius: 50%;
 }
 
 .unvisible {
@@ -124,19 +124,40 @@
     transition: transform 0.2s ease; 
 }
 .contIcons {
+
     display: flex;
-    background-color: chocolate;
+    position: fixed;
+    top: 5px;
+    left: 5px;
+    background-color: rgba(8, 28, 145, 0.5);;
+    border-radius: 20%;
+    opacity: 90%;
+    align-items: center;
+    justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .contIcons {
+    display: flex;
+    flex-direction: column;
+    margin: 0.5%;
+    padding: 0.5%;
+    gap: 5px;
+  }
+
+  
 }
 
 .ThemeMainDiv {
   right: 15px;
     top: 26px;
     display: flex;
-    margin-top: 8px;
 }
 .MainLangDiv {
   right: 15px;
   top: 26px;
   display: flex;
-  margin-top: 8px;
+}
+.darkLightStyles {
+  width: 24px;
+  height: 25px;
 }
