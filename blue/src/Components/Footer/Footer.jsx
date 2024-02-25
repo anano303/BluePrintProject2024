@@ -23,7 +23,7 @@ const Footer = () => {
             <Link to="/services">
               <li>სერვისები</li>
             </Link>
-            <Link to="/sportfolio">
+            <Link to="/portfolio">
               <li>პორტფოლიო</li>
             </Link>
             <Link to="/contact">
