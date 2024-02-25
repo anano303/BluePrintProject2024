@@ -70,7 +70,7 @@
 // Navbar.jsx
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import "./navbar.css";
+import "./Navbar.css";
 import closeImage from "../Icons/X.png";
 import toggleImage from "../Icons/Menu.png";
 import { useContext } from "react";

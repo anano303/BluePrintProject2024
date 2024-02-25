@@ -80,12 +80,12 @@
 }
 
 .lightMode {
-  background: url(../Icons/../../Assets/sun-icon.png) no-repeat;
+  background: url(../Icons/sun-icon.png) no-repeat;
   background-size: cover;
 }
 
 .darkMode {
-  background: url(../../Assets/moon-icon-8.png) no-repeat;
+  background: url(../Icons/moon-icon-8.png) no-repeat;
   background-size: cover;
   background-color: rgb(231, 232, 240);
   border-radius: 50%;
@@ -104,12 +104,12 @@
 }
 
 .GeoFlag {
-  background: url(../../Assets/geFlag.png) no-repeat;
+  background: url(../Icons/geFlag.png) no-repeat;
   background-size: cover;
 }
 
 .EnFlag {
-  background: url(../../Assets/enFlag.png) no-repeat;
+  background: url(../Icons/enFlag.png) no-repeat;
   background-size: cover;
 }
 

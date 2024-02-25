@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "../navbar/navbar.jsx";
+import Navbar from "../Navbar/Navbar.jsx";
 import logo from "../Icons/logo anim.png";
 import "./Header.css";
 import { ThemeContext } from "../../ThemeContext.js";
