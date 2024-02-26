@@ -29,25 +29,6 @@
   z-index: 8;
   cursor: pointer;
 }
-.lightMode {
-  background: url(../Icons/Toogle.png) no-repeat;
-  background-size: cover;
-  width: 40px;
-  height: 24px;
-  cursor: pointer;
-}
-
-.darkMode {
-  background: url(../Icons/toggle-on.png) no-repeat;
-  background-size: cover;
-  width: 30px;
-  height: 24px;
-  cursor: pointer;
-  margin-bottom: 5px;
-}
-.invisible {
-  display: none;
-}
 
 .links {
   margin-top: 115px;

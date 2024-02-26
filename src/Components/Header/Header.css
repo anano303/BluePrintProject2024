@@ -11,25 +11,27 @@
   width: 170px;
   
 }
-.icons {
-  display: flex;
-  gap: 15px;
-  align-items: center;
-}
+
 
 .menu {
   width: 32px;
   height: 8px;
-}  */
-
+}
+*/
 .headerPage {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #000000;
-  padding: 1rem;
+  /* padding: 1rem; */
   position: relative;
   padding: 30px 24px 30px 24px;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .headerIcons {
   display: flex;
@@ -79,4 +81,41 @@
 
 .no-decoration {
   text-decoration: none;
+}
+.ThemeMainDiv {
+  position: absolute;
+  left: 82%;
+  margin-bottom: 6px;
+}
+
+.lightMode {
+  background: url(../Icons/Toogle.png) no-repeat;
+  background-size: cover;
+  width: 40px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.darkMode {
+  background: url(../Icons/toggle-on.png) no-repeat;
+  background-size: cover;
+  width: 30px;
+  height: 24px;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+.invisible {
+  display: none;
+}
+.lightMode:hover,
+.darkMode:hover,
+.home:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: transform 0.2s ease;
+}
+.darkLightStyles {
+  width: 30px;
+  height: 29px;
+  position: relative;
 }

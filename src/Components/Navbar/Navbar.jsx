@@ -1,19 +1,17 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import toggle from "../Icons/Toogle.png";
 import "./Navbar.css";
 import closeImage from "../Icons/X.png";
 import toggleImage from "../Icons/Menu.png";
 import { useContext } from "react";
 import { TEXTS } from "../../Languages.js";
-import { ThemeContext } from "../../ThemeContext.js";
+
 import { LanguageContext } from "../../LanguageContext.js";
 const Navbar = () => {
   const [showLinks, setShowLinks] = useState(false);
 
   const { language } = useContext(LanguageContext);
 
-  const themeContext = useContext(ThemeContext);
   const langContext = useContext(LanguageContext);
 
   const geoOnClick = () => {
@@ -28,13 +26,6 @@ const Navbar = () => {
   };
   const closeNavbar = () => {
     setShowLinks(false);
-  };
-
-  const lightOnClick = () => {
-    themeContext.setTheme("light");
-  };
-  const darkOnClick = () => {
-    themeContext.setTheme("dark");
   };
 
   return (
@@ -103,25 +94,6 @@ const Navbar = () => {
       </div>
 
       <div className="toggle-button">
-        <div className="ThemeMainDiv">
-          <div
-            className={
-              "lightMode " + (themeContext.theme === "light" ? "invisible" : "")
-            }
-            onClick={lightOnClick}
-          >
-            <div className="darkLightStyles"></div>
-          </div>
-
-          <div
-            className={
-              "darkMode " + (themeContext.theme === "dark" ? "invisible" : "")
-            }
-            onClick={darkOnClick}
-          >
-            <div className="darkLightStyles"></div>
-          </div>
-        </div>
         <img
           src={showLinks ? closeImage : toggleImage}
           onClick={toggleLinks}
