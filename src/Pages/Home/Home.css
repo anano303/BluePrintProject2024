@@ -6,7 +6,6 @@
   padding: 32px 24px 32px 24px;
   display: flex;
   flex-direction: column;
-  gap: 50px;
 }
 
 .overlay {
@@ -20,12 +19,17 @@
 }
 
 .homeText,
-.homeButton {
+.homeButton,
+.pAndBtn {
   z-index: 2; /* Ensure text is above the overlay */
   color: #fff; /* Set the text color to white or your desired color */
 }
+.pAndBtn {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
 
-/* Your existing styles for h1, span, p, and button can remain the same */
 .homeText {
   margin-top: 80px;
 }
@@ -55,7 +59,7 @@
   font-size: 56px;
   margin-top: 20px;
 }
-.homePage p {
+.pAndBtn p {
   margin-top: 10px;
   font-family: Supreme;
   font-size: 18px;
@@ -78,4 +82,34 @@
   line-height: 16px;
   letter-spacing: 2px;
   text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .homeText {
+    margin-left: 55px;
+  }
+
+  .textMtavari {
+    margin-left: 100px;
+  }
+  .homeText span {
+    margin-left: 0px;
+  }
+  .pAndBtn p {
+    margin-left: 160px;
+    width: 300px;
+  }
+
+  .pAndBtn {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding-bottom: 50px;
+  }
+  .h1Desktop {
+    display: flex;
+  }
+
+  .textLife {
+    margin-left: 12px;
+  }
 }

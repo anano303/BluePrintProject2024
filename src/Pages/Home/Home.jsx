@@ -9,27 +9,28 @@ const Home = () => {
 
   const themeContext = useContext(ThemeContext);
   const langContext = useContext(LanguageContext);
-  document.body.style.fontFamily =
-    language === "en"
-      ? "supreme, sans-serif"
-      : "BPGNinoMtavruliNormal, sans-serif";
+
   return (
     <div className="homePage">
       <div className="overlay"></div>
       <div className="homeText">
-        <h1> {TEXTS[language].whatIsYours}</h1>
-        <h1> ცხოვრების </h1>{" "}
-        <h1>
+        <div className="h1Desktop">
+          <h1> {TEXTS[language].whatIsYours}</h1>
+          <h1 className="textLife"> ცხოვრების </h1>
+        </div>{" "}
+        <h1 className="textMtavari">
           {" "}
           მთავარი
           <span>{TEXTS[language].blueprint}? </span>
         </h1>
+      </div>
+      <div className="pAndBtn">
         <p>
           You plan your vision, you plan your purpose that's we call your life
           blueprint
         </p>
+        <button className="homeButton"> {TEXTS[language].findOut} </button>
       </div>
-      <button className="homeButton"> {TEXTS[language].findOut} </button>
     </div>
   );
 };
