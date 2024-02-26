@@ -10,11 +10,10 @@ const About = () => {
   const themeContext = useContext(ThemeContext);
   const langContext = useContext(LanguageContext);
 
-  
   return (
     <div className="aboutPage">
       <h3>
-      {TEXTS[language].hwoAreWe}
+        {TEXTS[language].whoAreWe}
         <span> {TEXTS[language].ourVisionIs} </span>
         {TEXTS[language].provideCustomers}
       </h3>
