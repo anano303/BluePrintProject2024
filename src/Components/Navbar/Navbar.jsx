@@ -26,6 +26,10 @@ const Navbar = () => {
   const toggleLinks = () => {
     setShowLinks(!showLinks);
   };
+  const closeNavbar = () => {
+    setShowLinks(false);
+  };
+
   const lightOnClick = () => {
     themeContext.setTheme("light");
   };
@@ -39,22 +43,31 @@ const Navbar = () => {
         {showLinks && (
           <ul className="links">
             <li>
-              <Link to="/"> {TEXTS[language].home} </Link>
+              <Link to="/" onClick={closeNavbar}>
+                {" "}
+                {TEXTS[language].home}{" "}
+              </Link>
             </li>
 
             <li>
-              <Link to="/about" className="aboutLi">
+              <Link to="/about" onClick={closeNavbar} className="aboutLi">
                 {TEXTS[language].about}
               </Link>
             </li>
             <li>
-              <Link to="/services">{TEXTS[language].services}</Link>
+              <Link to="/services" onClick={closeNavbar}>
+                {TEXTS[language].services}
+              </Link>
             </li>
             <li>
-              <Link to="/portfolio">{TEXTS[language].portfolio}</Link>
+              <Link to="/portfolio" onClick={closeNavbar}>
+                {TEXTS[language].portfolio}
+              </Link>
             </li>
             <li>
-              <Link to="/contact">{TEXTS[language].contact}</Link>
+              <Link to="/contact" onClick={closeNavbar}>
+                {TEXTS[language].contact}
+              </Link>
             </li>
 
             <div className="contIcons">
