@@ -84,8 +84,8 @@
 }
 .ThemeMainDiv {
   position: absolute;
-  left: 82%;
-  margin-bottom: 6px;
+  margin-bottom: 7px;
+  left: 240px;
 }
 
 .lightMode {
@@ -118,6 +118,22 @@
   width: 30px;
   height: 29px;
   position: relative;
+}
+
+@media screen and (min-width: 400px) {
+  .ThemeMainDiv {
+    left: 73%;
+  }
+}
+@media screen and (min-width: 500px) {
+  .ThemeMainDiv {
+    left: 78%;
+  }
+}
+@media screen and (min-width: 600px) {
+  .ThemeMainDiv {
+    left: 82%;
+  }
 }
 
 @media screen and (min-width: 768px) {

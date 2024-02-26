@@ -15,8 +15,8 @@ const Header = () => {
   };
   return (
     <div className="headerPage">
+      <img src={logo} alt="logo" className="logo" />
       <div className="icons">
-        <img src={logo} alt="logo" className="logo" />
         <div className="ThemeMainDiv">
           <div
             className={
@@ -36,8 +36,9 @@ const Header = () => {
             <div className="darkLightStyles"></div>
           </div>
         </div>
+
+        <Navbar />
       </div>
-      <Navbar />
     </div>
   );
 };
