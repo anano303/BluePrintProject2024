@@ -9,6 +9,10 @@ const Home = () => {
 
   const themeContext = useContext(ThemeContext);
   const langContext = useContext(LanguageContext);
+  document.body.style.fontFamily =
+    language === "en"
+      ? "supreme, sans-serif"
+      : "BPGNinoMtavruliNormal, sans-serif";
   return (
     <div className="homePage">
       <div className="overlay"></div>

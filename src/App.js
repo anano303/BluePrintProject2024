@@ -10,7 +10,6 @@ import Portfolio from "./Pages/Portfolio/Portfolio";
 import { LanguageContext } from "./LanguageContext";
 import { ThemeContext } from "./ThemeContext";
 import React, { useState } from "react";
-import { LanguageProvider } from "./LanguageContext";
 
 function App() {
   const [language, setLanguage] = useState("ge");
@@ -18,56 +17,54 @@ function App() {
 
   return (
     <div className="App">
-      <LanguageProvider>
-        <LanguageContext.Provider value={{ language, setLanguage }}>
-          <ThemeContext.Provider value={{ theme, setTheme }}>
-            <Router>
-              <Routes>
-                <Route
-                  path="/"
-                  element={
-                    <Layout>
-                      <Home />
-                    </Layout>
-                  }
-                />
-                <Route
-                  path="/contact"
-                  element={
-                    <Layout>
-                      <Contact />
-                    </Layout>
-                  }
-                />
-                <Route
-                  path="/about"
-                  element={
-                    <Layout>
-                      <About />
-                    </Layout>
-                  }
-                />
-                <Route
-                  path="/services"
-                  element={
-                    <Layout>
-                      <Services />
-                    </Layout>
-                  }
-                />
-                <Route
-                  path="/portfolio"
-                  element={
-                    <Layout>
-                      <Portfolio />
-                    </Layout>
-                  }
-                />
-              </Routes>
-            </Router>
-          </ThemeContext.Provider>
-        </LanguageContext.Provider>
-      </LanguageProvider>
+      <LanguageContext.Provider value={{ language, setLanguage }}>
+        <ThemeContext.Provider value={{ theme, setTheme }}>
+          <Router>
+            <Routes>
+              <Route
+                path="/"
+                element={
+                  <Layout>
+                    <Home />
+                  </Layout>
+                }
+              />
+              <Route
+                path="/contact"
+                element={
+                  <Layout>
+                    <Contact />
+                  </Layout>
+                }
+              />
+              <Route
+                path="/about"
+                element={
+                  <Layout>
+                    <About />
+                  </Layout>
+                }
+              />
+              <Route
+                path="/services"
+                element={
+                  <Layout>
+                    <Services />
+                  </Layout>
+                }
+              />
+              <Route
+                path="/portfolio"
+                element={
+                  <Layout>
+                    <Portfolio />
+                  </Layout>
+                }
+              />
+            </Routes>
+          </Router>
+        </ThemeContext.Provider>
+      </LanguageContext.Provider>
     </div>
   );
 }

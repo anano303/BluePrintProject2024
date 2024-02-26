@@ -41,6 +41,11 @@
   flex-direction: column;
   margin-bottom: 12px;
 }
+/* .homePage [data-language="en"] {
+  font-family: "supreme", sans-serif !important;
+  background-color: #0000ff;
+  color: #fff;
+} */
 .homePage span {
   font-family: "BPGNinoMtavruliNormal", sans-serif;
   color: #0000ff;

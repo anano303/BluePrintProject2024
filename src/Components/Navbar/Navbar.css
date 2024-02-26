@@ -66,7 +66,7 @@
 }
 .links li a {
   text-decoration: none;
-  color: #fff; /* Change the color of the links */
+  color: #fff;
   transition: color 0.3s ease;
   font-family: "BPGNinoMtavruliNormal", sans-serif;
   font-weight: 700;

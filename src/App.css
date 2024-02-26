@@ -2,21 +2,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "BPGNinoMtavruliNormal", sans-serif;
+  /* font-family: "BPGNinoMtavruliNormal", sans-serif; */
   color: black;
   text-decoration: none;
   transition-duration: 0.5s;
-}
-
-@font-face {
-  font-family: "supreme";
-  src: url(./Fonts/5ZZU4JM62PS7KOJ7BOKLPL3AEO2G76TS.woff2) format("woff"),
-    url(./Fonts/GHZ524YD2KXKRX4PZ2S7DE3HKNPE2EKH.woff2) format("woff"),
-    url(./Fonts/SPD5TGNFK2XOFPWN7JB26FTXSLXBKEAV.woff2) format("woff"),
-    url(./Fonts/TN7F4YNDQ3FJ6JRJV2XDS3CGMFKQRLXV.woff2) format("woff");
-  font-style: normal;
-  font-weight: normal;
-  font-display: swap;
 }
 
 :root {
@@ -46,7 +35,4 @@ li,
 ul {
   text-decoration: none;
   list-style-type: none;
-}
-body[data-language="en"] {
-  font-family: "supreme", sans-serif !important;
 }
