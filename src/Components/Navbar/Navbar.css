@@ -7,7 +7,6 @@
   justify-content: space-between;
   align-items: center;
   background-color: #000000;
-  position: fixed;
   top: 0;
   right: 0;
   margin-right: calc(100% - 100%);
@@ -118,7 +117,11 @@
   left: 60px;
   letter-spacing: 1px;
 }
-
+.links ul {
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+}
 @media screen and (min-width: 768px) {
   .navbar {
     width: 100%;
@@ -132,6 +135,7 @@
     left: 0; /* Align to the left and hide initially */
     transition: left 1s ease;
     opacity: 0.99;
+    padding-left: 180px;
   }
 
   .navbar.hidden {
@@ -150,5 +154,19 @@
     margin: 0.5%;
     padding: 0.5%;
     gap: 5px;
+    align-self: center;
+  }
+  .EnFlag,
+  .GeoFlag {
+    background-size: contain;
+  }
+  .links {
+    flex-direction: row;
+    gap: 100px;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .navbar.hidden {
+    left: -94%;
   }
 }

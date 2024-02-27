@@ -6,6 +6,7 @@
   padding: 32px 24px 32px 24px;
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
 }
 
 .overlay {
@@ -111,5 +112,18 @@
 
   .textLife {
     margin-left: 12px;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .homeText {
+    margin-left: 85px;
+  }
+
+  .pAndBtn p {
+    margin-left: 160px;
+  }
+  .icons img {
+    margin-left: 10px;
   }
 }

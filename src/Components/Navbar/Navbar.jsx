@@ -33,34 +33,35 @@ const Navbar = () => {
       <div className={`navbar ${showLinks ? "" : "hidden"}`}>
         {showLinks && (
           <ul className="links">
-            <li>
-              <Link to="/" onClick={closeNavbar}>
-                {" "}
-                {TEXTS[language].home}{" "}
-              </Link>
-            </li>
+            <ul>
+              <li>
+                <Link to="/" onClick={closeNavbar}>
+                  {" "}
+                  {TEXTS[language].home}{" "}
+                </Link>
+              </li>
 
-            <li>
-              <Link to="/about" onClick={closeNavbar} className="aboutLi">
-                {TEXTS[language].about}
-              </Link>
-            </li>
-            <li>
-              <Link to="/services" onClick={closeNavbar}>
-                {TEXTS[language].services}
-              </Link>
-            </li>
-            <li>
-              <Link to="/portfolio" onClick={closeNavbar}>
-                {TEXTS[language].portfolio}
-              </Link>
-            </li>
-            <li>
-              <Link to="/contact" onClick={closeNavbar}>
-                {TEXTS[language].contact}
-              </Link>
-            </li>
-
+              <li>
+                <Link to="/about" onClick={closeNavbar} className="aboutLi">
+                  {TEXTS[language].about}
+                </Link>
+              </li>
+              <li>
+                <Link to="/services" onClick={closeNavbar}>
+                  {TEXTS[language].services}
+                </Link>
+              </li>
+              <li>
+                <Link to="/portfolio" onClick={closeNavbar}>
+                  {TEXTS[language].portfolio}
+                </Link>
+              </li>
+              <li>
+                <Link to="/contact" onClick={closeNavbar}>
+                  {TEXTS[language].contact}
+                </Link>
+              </li>
+            </ul>
             <div className="contIcons">
               <div className="mainLangDiv">
                 <div
