@@ -45,6 +45,7 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 12px;
+  text-transform: uppercase;
 }
 /* .homePage [data-language="en"] {
   font-family: "supreme", sans-serif !important;
@@ -63,6 +64,7 @@
   letter-spacing: -2px;
   text-align: left;
   margin-top: 20px;
+  text-transform: uppercase;
 }
 .pAndBtn p {
   margin-top: 10px;
@@ -87,6 +89,7 @@
   line-height: 16px;
   letter-spacing: 2px;
   text-align: center;
+  text-transform: uppercase;
 }
 .homeButton:hover {
   background-color: #0f0f61;

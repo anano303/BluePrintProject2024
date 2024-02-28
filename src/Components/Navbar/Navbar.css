@@ -44,6 +44,14 @@
   letter-spacing: -2px;
   text-align: left;
 }
+.links.en {
+  font-family: Supreme;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 56px;
+  letter-spacing: -2px;
+  text-align: left;
+}
 .links li a {
   text-decoration: none;
   color: #fff;

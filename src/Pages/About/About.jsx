@@ -1,5 +1,5 @@
 import "./About.css";
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { TEXTS } from "../../Languages.js";
 import { ThemeContext } from "../../ThemeContext.js";
 import { LanguageContext } from "../../LanguageContext.js";
@@ -10,6 +10,9 @@ const About = () => {
   const themeContext = useContext(ThemeContext);
   const langContext = useContext(LanguageContext);
 
+  useEffect(() => {
+    document.body.className = language;
+  }, [language]);
   return (
     <div className="aboutPage">
       <h3>
