@@ -7,12 +7,22 @@ export const LanguageProvider = ({ children }) => {
   const [language, setLanguage] = useState("ge");
 
   useEffect(() => {
-    document.body.style.fontFamily =
+    const fontFamily =
       language === "en"
-        ? "supreme, sans-serif"
-        : "BPGNinoMtavruliNormal, sans-serif";
+        ? "'supreme', sans-serif"
+        : "'BPGNinoMtavruliNormal', sans-serif";
+    document.body.style.fontFamily = fontFamily;
   }, [language]);
-  console.log(language);
+
+  //     const font = new FontFace(
+  //       "supreme",
+  //       "url(./Fonts/5ZZU4JM62PS7KOJ7BOKLPL3AEO2G76TS.woff2) )"
+  //     );
+  //     font.load().then(() => {
+  //       document.fonts.add(font);
+  //       applyFont();
+  //     });
+  //   }, [language]);
 
   const contextValue = {
     language,

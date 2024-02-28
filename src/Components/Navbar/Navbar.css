@@ -37,7 +37,7 @@
   gap: 20px;
   text-align: left;
   transition: max-height 3s ease;
-  font-family: "BPGNinoMtavruliNormal", sans-serif;
+  /* font-family: "BPGNinoMtavruliNormal", sans-serif; */
   font-size: 48px;
   font-weight: 700;
   line-height: 56px;
@@ -48,7 +48,7 @@
   text-decoration: none;
   color: #fff;
   transition: color 0.3s ease;
-  font-family: "BPGNinoMtavruliNormal", sans-serif;
+  /* font-family: "BPGNinoMtavruliNormal", sans-serif; */
   font-weight: 700;
   letter-spacing: 0px;
   text-align: left;
@@ -111,11 +111,15 @@
 .darkLightStyles p {
   position: absolute;
   color: #fff;
-  font-family: "BPGNinoMtavruliNormal", sans-serif;
+  /* font-family: "BPGNinoMtavruliNormal", sans-serif; */
   font-size: 18px;
   top: -14px;
   left: 60px;
   letter-spacing: 1px;
+}
+.darkLightStyles p:hover {
+  color: #0000ff;
+  font-weight: bold;
 }
 .links ul {
   gap: 20px;
@@ -169,4 +173,37 @@
   .navbar.hidden {
     left: -94%;
   }
+  .links {
+    /* font-family: Supreme; */
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 102px;
+    letter-spacing: 0px;
+    text-align: left;
+  }
+  .darkLightStyles p {
+    font-size: 22px;
+    top: -35px;
+    left: 60px;
+    letter-spacing: 2px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .navbar.hidden {
+    left: -96%;
+  }
+  .toggle-button {
+    left: 2px;
+  }
+  .icons img {
+    margin-left: -2px;
+  }
+}
+@media screen and (min-width: 1700px) {
+  .navbar.hidden {
+    left: -97%;
+  }
+  /* .toggle-button img {
+    margin-left: 1px;
+  } */
 }

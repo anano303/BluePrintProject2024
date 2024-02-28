@@ -8,7 +8,8 @@
 .footerText {
   gap: 32px;
 }
-.footerText h1 {
+.footerText h1,
+.footerText h2 {
   font-family: Supreme;
   font-size: 50px;
   font-weight: 700;
@@ -118,7 +119,7 @@
   .footerText {
     flex-direction: row;
     justify-content: flex-start;
-    max-width: 750px;
+    /* max-width: 750px; */
   }
   .footerButton {
     align-self: center;
@@ -149,5 +150,51 @@
   }
   .footerSerAndSoc {
     gap: 128px;
+  }
+  .footerText {
+    gap: 8px;
+  }
+  .footerText h1 {
+    font-size: 88px;
+    font-weight: 700;
+    line-height: 88px;
+    letter-spacing: 0px;
+    text-align: left;
+  }
+  .footerButton {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0.016em;
+    text-align: center;
+    margin-right: 80px;
+  }
+  .lastFooter h2 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 2px;
+    text-align: left;
+  }
+  .mailPhone a {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 1px;
+    text-align: left;
+  }
+  .footerMenu ul a li {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 34px;
+    letter-spacing: 0.04em;
+    text-align: left;
+  }
+  .footerSocList a {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 34px;
+    letter-spacing: 1px;
+    text-align: left;
   }
 }

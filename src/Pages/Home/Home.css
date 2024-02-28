@@ -35,7 +35,7 @@
   margin-top: 80px;
 }
 .homePage h1 {
-  font-family: Supreme;
+  /* font-family: "BPGNinoMtavruliNormal", sans-serif; */
   font-size: 56px;
   font-weight: 700;
   line-height: 56px;
@@ -52,12 +52,16 @@
   color: #fff;
 } */
 .homePage span {
-  font-family: "BPGNinoMtavruliNormal", sans-serif;
+  /* font-family: "BPGNinoMtavruliNormal", sans-serif; */
   color: #0000ff;
   text-decoration: line-through 1px;
   text-decoration-line: line-through;
   text-decoration-color: #0000ff;
   font-size: 56px;
+  font-weight: 700;
+  line-height: 56px;
+  letter-spacing: -2px;
+  text-align: left;
   margin-top: 20px;
 }
 .pAndBtn p {
@@ -77,12 +81,16 @@
   background-color: #0000ff;
   border: none;
   border-radius: 100%;
-  font-family: Supreme;
+  /* font-family: "BPGNinoMtavruliNormal", sans-serif; */
   font-size: 12px;
   font-weight: 700;
   line-height: 16px;
   letter-spacing: 2px;
   text-align: center;
+}
+.homeButton:hover {
+  background-color: #0f0f61;
+  cursor: pointer;
 }
 @media screen and (min-width: 768px) {
   .homeText {
@@ -115,7 +123,7 @@
   }
 }
 
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1200px) {
   .homeText {
     margin-left: 85px;
   }
@@ -125,5 +133,32 @@
   }
   .icons img {
     margin-left: 10px;
+  }
+  .homePage h1,
+  .homePage span {
+    font-size: 96px;
+    font-weight: 700;
+    line-height: 96px;
+    letter-spacing: -2px;
+    text-align: left;
+  }
+  .homePage p {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 29px;
+    letter-spacing: 0px;
+    text-align: left;
+  }
+  .homeButton {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 2px;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .homeText span {
+    padding-top: 20px;
   }
 }

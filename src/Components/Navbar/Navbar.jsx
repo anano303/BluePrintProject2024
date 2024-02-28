@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 import closeImage from "../Icons/X.png";
@@ -13,6 +13,9 @@ const Navbar = () => {
   const { language } = useContext(LanguageContext);
 
   const langContext = useContext(LanguageContext);
+  useEffect(() => {
+    document.body.className = language;
+  }, [language]);
 
   const geoOnClick = () => {
     langContext.setLanguage("ge");
