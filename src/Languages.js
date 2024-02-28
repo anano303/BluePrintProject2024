@@ -11,6 +11,8 @@ export const TEXTS = {
     provideCustomers:
       " მიაწოდე მომხმარებელს სიახლე, კრეატივი, ხარისხი და ემოცია. ",
     whatIsYours: "რა არის შენი ",
+    life: "ცხოვრების",
+    main: "მთავარი",
     blueprint: "ბლუპრინტი",
     findOut: "აღმოაჩინე ",
   },
@@ -25,8 +27,10 @@ export const TEXTS = {
     ourVisionIs: "Our vision is:",
     provideCustomers:
       "Provide customers with news, creative, quality and emotion.",
-    whatIsYours: "what is yours",
-    blueprint: "blueprint",
+    whatIsYours: "what is the",
+    main: "blueprint",
+    life: "main",
+    blueprint: "in your life",
     youPlanYourVision:
       "You plan your vision, you plan your purpose that's we call your life blueprint",
     findOut: "Find out",

@@ -8,7 +8,6 @@
   display: flex;
   flex-direction: column;
   margin-top: 80px;
-  font-family: "BPGNinoMtavruliNormal", sans-serif;
   font-size: 40px;
   font-weight: 600;
   line-height: 62px;
@@ -16,7 +15,6 @@
   text-align: left;
 }
 .aboutPage span {
-  font-family: "BPGNinoMtavruliNormal", sans-serif;
   color: #0000ff;
   text-decoration: line-through 1px;
   text-decoration-line: line-through;

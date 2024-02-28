@@ -1,5 +1,5 @@
 import "./Home.css";
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { TEXTS } from "../../Languages.js";
 import { ThemeContext } from "../../ThemeContext.js";
 import { LanguageContext } from "../../LanguageContext.js";
@@ -10,17 +10,19 @@ const Home = () => {
   const themeContext = useContext(ThemeContext);
   const langContext = useContext(LanguageContext);
 
+  useEffect(() => {
+    document.body.className = language;
+  }, [language]);
   return (
     <div className="homePage">
       <div className="overlay"></div>
       <div className="homeText">
         <div className="h1Desktop">
           <h1> {TEXTS[language].whatIsYours}</h1>
-          <h1 className="textLife"> ცხოვრების </h1>
+          <h1 className="textLife"> {TEXTS[language].life} </h1>
         </div>{" "}
         <h1 className="textMtavari">
-          {" "}
-          მთავარი
+          {TEXTS[language].main}
           <span>{TEXTS[language].blueprint}? </span>
         </h1>
       </div>

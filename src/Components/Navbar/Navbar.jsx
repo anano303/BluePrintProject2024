@@ -5,14 +5,15 @@ import closeImage from "../Icons/X.png";
 import toggleImage from "../Icons/Menu.png";
 import { useContext } from "react";
 import { TEXTS } from "../../Languages.js";
-
 import { LanguageContext } from "../../LanguageContext.js";
+
 const Navbar = () => {
   const [showLinks, setShowLinks] = useState(false);
 
   const { language } = useContext(LanguageContext);
 
   const langContext = useContext(LanguageContext);
+
   useEffect(() => {
     document.body.className = language;
   }, [language]);
