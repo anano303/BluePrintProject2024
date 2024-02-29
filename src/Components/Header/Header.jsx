@@ -4,6 +4,7 @@ import logo from "../Icons/logo anim.png";
 import "./Header.css";
 import { ThemeContext } from "../../ThemeContext.js";
 import { useContext } from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const themeContext = useContext(ThemeContext);
@@ -15,7 +16,9 @@ const Header = () => {
   };
   return (
     <div className="headerPage">
+      <Link to="/">
       <img src={logo} alt="logo" className="logo" />
+      </Link>
       <div className="icons">
         <div className="ThemeMainDiv">
           <div
