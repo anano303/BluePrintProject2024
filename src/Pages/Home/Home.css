@@ -145,6 +145,9 @@
     letter-spacing: -2px;
     text-align: left;
   }
+  .homePage span.en {
+    margin-top: 5px;
+  }
   .homePage p {
     font-size: 18px;
     font-weight: 300;
@@ -158,6 +161,9 @@
     line-height: 16px;
     letter-spacing: 2px;
     text-align: center;
+  }
+  .onlyEnglish {
+    margin-left: 75px;
   }
 }
 @media screen and (min-width: 1400px) {

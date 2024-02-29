@@ -23,8 +23,9 @@ const Home = () => {
         </div>{" "}
         <h1 className="textMtavari">
           {TEXTS[language].main}
-          <span>{TEXTS[language].blueprint}? </span>
+          <span>{TEXTS[language].blueprint} </span>
         </h1>
+        <h1 className="onlyEnglish">{TEXTS[language].onlyEnglish}</h1>
       </div>
       <div className="pAndBtn">
         <p>
