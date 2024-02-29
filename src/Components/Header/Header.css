@@ -91,7 +91,7 @@
 .lightMode {
   background: url(../Icons/Toogle.png) no-repeat;
   background-size: cover;
-  width: 40px;
+  width: 30px;
   height: 24px;
   cursor: pointer;
 }
@@ -102,14 +102,15 @@
   width: 30px;
   height: 24px;
   cursor: pointer;
-  margin-bottom: 5px;
+  /* margin-bottom: 5px; */
 }
 .invisible {
   display: none;
 }
 .lightMode:hover,
 .darkMode:hover,
-.home:hover {
+.home:hover,
+.logo:hover {
   cursor: pointer;
   transform: scale(1.05);
   transition: transform 0.2s ease;
