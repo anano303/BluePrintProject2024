@@ -13,7 +13,22 @@
   transition: top 1s ease, right 1s ease;
   opacity: 0.99;
   padding: 30px 20px 30px 20px;
+  overflow-y: scroll;
 }
+.navbar::-webkit-scrollbar,
+.navbar::-moz-scrollbar {
+  width: 0.2px;
+}
+.navbar::-webkit-scrollbar-thumb,
+.navbar::-moz-scrollbar-thumb {
+  background-color: transparent;
+}
+
+.navbar::-webkit-scrollbar-track,
+.navbar::-moz-scrollbar-track {
+  background-color: transparent; /* Adjust the color of the track */
+}
+
 .navbar.hidden {
   top: -100%;
 }
