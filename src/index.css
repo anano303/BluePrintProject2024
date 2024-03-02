@@ -32,7 +32,7 @@ body.en {
 }
 body.ge {
   font-family: "BPGNinoMtavruliNormal", sans-serif;
-  background-color: lightblue;
+  background-color: rgb(30, 31, 32);
 }
 @font-face {
   font-family: "BPGNinoMtavruliNormal";

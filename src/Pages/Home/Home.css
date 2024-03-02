@@ -96,6 +96,9 @@
   cursor: pointer;
 }
 @media screen and (min-width: 768px) {
+  .homePage {
+    padding-top: 50px;
+  }
   .homeText {
     margin-left: 55px;
   }

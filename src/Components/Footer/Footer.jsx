@@ -1,7 +1,11 @@
 import "./Footer.css";
 import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { TEXTS } from "../../Languages.js";
+import { LanguageContext } from "../../LanguageContext.js";
 
 const Footer = () => {
+  const { language } = useContext(LanguageContext);
   return (
     <div className="footerPage">
       <div className="footerText">
@@ -15,21 +19,24 @@ const Footer = () => {
         <div className="footerSerAndSoc">
           <div className="footerMenu">
             <ul>
-              <Link to="/">
-                <li>მთავარი</li>
-              </Link>
-              <Link to="/about">
-                <li>ვინ ვართ ჩვენ ? </li>
-              </Link>
-              <Link to="/services">
-                <li>სერვისები</li>
-              </Link>
-              <Link to="/portfolio">
-                <li>პორტფოლიო</li>
-              </Link>
-              <Link to="/contact">
-                <li>საკონტაქტო</li>
-              </Link>
+              <li>
+                <Link to="/"> {TEXTS[language].home} </Link>
+              </li>
+
+              <li>
+                <Link to="/about" className="aboutLi">
+                  {TEXTS[language].about}
+                </Link>
+              </li>
+              <li>
+                <Link to="/services">{TEXTS[language].services}</Link>
+              </li>
+              <li>
+                <Link to="/portfolio">{TEXTS[language].portfolio}</Link>
+              </li>
+              <li>
+                <Link to="/contact">{TEXTS[language].contact}</Link>
+              </li>
             </ul>
           </div>
           <div className="footerSocList">

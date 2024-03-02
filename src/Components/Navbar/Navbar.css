@@ -14,6 +14,8 @@
   opacity: 0.99;
   padding: 30px 20px 30px 20px;
   overflow-y: scroll;
+  scrollbar-width: thin; /* "auto" or "thin" for Firefox */
+  scrollbar-color: transparent transparent;
 }
 .navbar::-webkit-scrollbar,
 .navbar::-moz-scrollbar {
@@ -31,6 +33,8 @@
 
 .navbar.hidden {
   top: -100%;
+  background-color: #000000;
+  opacity: 0.3;
 }
 
 .toggle-button {
@@ -156,13 +160,16 @@
     font-size: 10vh;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
+    background-color: #000000;
     position: fixed;
     top: 0; /* Set the default position to top of viewport */
     left: 0; /* Align to the left and hide initially */
     transition: left 1s ease;
     opacity: 0.99;
     padding-left: 180px;
+  }
+  .toggle-button img {
+    transform: rotate(90deg);
   }
 
   .navbar.hidden {
@@ -192,6 +199,12 @@
     gap: 100px;
   }
 }
+
+@media screen and (min-width: 900px) {
+  .toggle-button {
+    left: 15px;
+  }
+}
 @media screen and (min-width: 1100px) {
   .navbar.hidden {
     left: -94%;
@@ -211,12 +224,17 @@
     letter-spacing: 2px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .toggle-button {
+    left: 20px;
+  }
+}
 @media screen and (min-width: 1400px) {
   .navbar.hidden {
     left: -96%;
   }
   .toggle-button {
-    left: 2px;
+    left: 10px;
   }
   .icons img {
     margin-left: -2px;

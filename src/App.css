@@ -5,6 +5,8 @@
   color: black;
   text-decoration: none;
   transition-duration: 0.5s;
+  scrollbar-width: thin; /* "auto" or "thin" for Firefox */
+  scrollbar-color: transparent transparent;
 }
 
 :root {

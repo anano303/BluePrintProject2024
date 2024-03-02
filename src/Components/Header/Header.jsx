@@ -17,9 +17,9 @@ const Header = () => {
   return (
     <div className="headerPage">
       <Link to="/">
-      <img src={logo} alt="logo" className="logo" />
+        <img src={logo} alt="logo" className="logo" />
       </Link>
-      <div className="icons">
+      {/* <div className="icons">
         <div className="ThemeMainDiv">
           <div
             className={
@@ -38,10 +38,11 @@ const Header = () => {
           >
             <div className="darkLightStyles"></div>
           </div>
-        </div>
+        </div> */}
 
-        <Navbar />
-      </div>
+      {/* <Navbar />
+      </div> */}
+      <Navbar />
     </div>
   );
 };
