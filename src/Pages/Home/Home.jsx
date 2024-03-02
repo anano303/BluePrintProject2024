@@ -3,7 +3,7 @@ import { useContext, useEffect } from "react";
 import { TEXTS } from "../../Languages.js";
 import { ThemeContext } from "../../ThemeContext.js";
 import { LanguageContext } from "../../LanguageContext.js";
-
+import { Link } from "react-router-dom";
 const Home = () => {
   const { language } = useContext(LanguageContext);
 
@@ -32,7 +32,9 @@ const Home = () => {
           You plan your vision, you plan your purpose that's we call your life
           blueprint
         </p>
-        <button className="homeButton"> {TEXTS[language].findOut} </button>
+        <Link to="/about">
+          <button className="homeButton"> {TEXTS[language].findOut} </button>
+        </Link>
       </div>
     </div>
   );

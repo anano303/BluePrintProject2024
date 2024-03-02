@@ -83,17 +83,19 @@
   background-color: #0000ff;
   border: none;
   border-radius: 100%;
-  /* font-family: "BPGNinoMtavruliNormal", sans-serif; */
+  font-family: "BPGNinoMtavruliNormal", sans-serif;
   font-size: 12px;
   font-weight: 700;
   line-height: 16px;
   letter-spacing: 2px;
   text-align: center;
   text-transform: uppercase;
+  color: #000000;
 }
 .homeButton:hover {
-  background-color: #0f0f61;
+  background-color: #030e38;
   cursor: pointer;
+  color: white;
 }
 @media screen and (min-width: 768px) {
   .homePage {
@@ -162,11 +164,14 @@
     text-align: left;
   }
   .homeButton {
+    font-family: "BPGNinoMtavruliNormal", sans-serif;
     font-size: 12px;
     font-weight: 700;
     line-height: 16px;
     letter-spacing: 2px;
+    color: #000000;
     text-align: center;
+    text-transform: uppercase;
   }
   .onlyEnglish {
     margin-left: 75px;
