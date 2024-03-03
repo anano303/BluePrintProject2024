@@ -1,10 +1,18 @@
 import React from "react";
 import "./Services.css";
 import blackArrowBUtton from "../Assets/black_arrow_button.png";
+import { TEXTS } from "../../Languages.js";
+import { LanguageContext } from "../../LanguageContext.js";
+import { useContext } from "react";
 
 const Services = () => {
+  const { language } = useContext(LanguageContext);
   return (
     <div className="servicesPage">
+      <h1>
+        {TEXTS[language].studio} <br />
+        <span>{TEXTS[language].services}</span>
+      </h1>
       <div className="gridItems">
         <div className="grid-item">
           <div className="cut_left_corner project01 img">

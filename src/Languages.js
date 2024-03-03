@@ -17,6 +17,7 @@ export const TEXTS = {
     onlyEnglish: "",
     findOut: "აღმოაჩინე ",
     more: "გაიგე მეტი",
+    studio: "სტუდიური",
   },
 
   en: {
@@ -37,5 +38,6 @@ export const TEXTS = {
       "You plan your vision, you plan your purpose that's we call your life blueprint",
     findOut: "Find out",
     more: "READ MORE",
+    studio: "STUDIO",
   },
 };

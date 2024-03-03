@@ -2,6 +2,32 @@
   padding: 15vh 6vw 11.5vh 10vw;
   background-color: black;
 }
+.servicesPage h1 {
+  margin-bottom: 50px;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 62px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: transparent;
+  -webkit-text-stroke: 0.5px rgba(102, 102, 102, 1);
+}
+.servicesPage span {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 62px;
+  letter-spacing: 0px;
+  color: rgba(229, 229, 72, 1);
+  text-decoration: line-through 1px;
+  text-decoration-line: line-through;
+  text-decoration-color: currentcolor;
+  -webkit-text-stroke: 0;
+  text-decoration-line: line-through;
+  -webkit-text-decoration-line: line-through;
+  text-decoration-color: rgba(229, 229, 72, 1);
+  padding-left: 95px;
+}
+
 .transparentText {
   font-size: 1.25rem;
   color: transparent;
@@ -73,15 +99,15 @@
 }
 
 .project02 {
-  background: url(../Assets/bg-image.jpg) no-repeat;
+  background: url(../Assets/პროდაქშენი.jpg) no-repeat;
 }
 
 .project03 {
-  background: url(../Assets/bg-image2.jpg) no-repeat;
+  background: url(../Assets/სოციალური\ ქსელები.jpg) no-repeat;
 }
 
 .project04 {
-  background: url(../Assets/bg-image2.jpg) no-repeat;
+  background: url(../Assets/პოლიგრაფია.jpg) no-repeat;
 }
 .aboutProject {
   padding: 25px 0 0 2vw;
