@@ -153,7 +153,7 @@
 
 #black_arrow {
   transform: rotate(-90deg);
-  height: 50%;
+  height: 70%;
 }
 
 .grid-item:hover .projectOnHover {
@@ -185,6 +185,7 @@
   background: rgba(229, 229, 72, 0.3);
   border: transparent;
   cursor: pointer;
+  margin-right: 10px;
 }
 .projectOnHover img {
   width: 30px;
@@ -193,8 +194,8 @@
 }
 
 .aboutProject:hover {
-    transform: translateY(0);
-} 
+  transform: translateY(0);
+}
 
 .grid-item:hover {
   transform: translateY(0);
@@ -257,36 +258,38 @@
   filter: grayscale(0%);
   -webkit-filter: grayscale(0%);
 }
-@media only screen and (max-width: 700px){
+@media only screen and (max-width: 700px) {
   html {
-  font-size: clamp(7px, 3.757px + 1.0811vw, 8px);
-  margin: 0;
-  padding: 0;
-}
-.servicesPage span {
-
-  padding-left: 35px;
-}
-.aboutProject {
-  padding-top: 15px;
+    font-size: clamp(7px, 3.757px + 1.0811vw, 8px);
+    margin: 0;
+    padding: 0;
+  }
+  .servicesPage span {
+    padding-left: 35px;
+  }
+  .aboutProject {
+    padding-top: 15px;
   }
 
-.grid-item {
-  height: 40vh;
-  position: relative;
-  transition-duration: 0.5s;
-  background-color: black;
-  cursor: pointer;
-}
-.grid-item > .img {
-  height: 55%;
-}
-.projectParagraph {
-  font-size: 1.32rem;
-  padding: 4px;
-}
-.img > .ForProject {
-  margin-bottom: 2.5rem;
-  -webkit-text-stroke: 0.5px rgba(255, 255, 255, 1);
-}
+  .grid-item {
+    height: 40vh;
+    position: relative;
+    transition-duration: 0.5s;
+    background-color: black;
+    cursor: pointer;
+  }
+  .grid-item > .img {
+    height: 55%;
+  }
+  .projectParagraph {
+    font-size: 1.32rem;
+    padding: 4px;
+  }
+  .img > .ForProject {
+    margin-bottom: 2.5rem;
+    -webkit-text-stroke: 0.5px rgba(255, 255, 255, 1);
+  }
+  .projectOnHover > button {
+    width: 22%;
+  }
 }
