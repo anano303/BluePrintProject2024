@@ -121,11 +121,6 @@
   display: inline-block;
 }
 
-/* .projectParagraph {
-  font-size: 1.32rem;
-  padding: 16px 0;
-} */
-
 .grid-item {
   height: 670px;
   position: relative;
@@ -165,16 +160,6 @@
   height: 22%;
 }
 
-/* .projectOnHover {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 20%;
-  background-color: rgba(229, 229, 72, 0.5);
-  opacity: 0;
-  transition: opacity 0.5s;
-} */
-
 .img > .projectOnHover {
   width: 100%;
   height: 0%;
@@ -206,20 +191,6 @@
   height: auto;
   transform: rotate(180deg);
 }
-
-/* .aboutProject {
-  padding: 1rem;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background-color: rgba(255, 255, 255, 0.8);
-  transition: transform 0.5s;
-  transform: translateY(100%);
-  padding: 25px 0 0 2vw;
-  width: 95%;
-} */
-
 
 .aboutProject:hover {
     transform: translateY(0);
