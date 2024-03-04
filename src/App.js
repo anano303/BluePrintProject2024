@@ -11,60 +11,88 @@ import Portfolio from "./Pages/Portfolio/Portfolio";
 import { LanguageContext } from "./LanguageContext";
 import { ThemeContext } from "./ThemeContext";
 import React, { useState, useEffect } from "react";
+import arrowHome from "./arrow_button.png";
 
 function App() {
   const [language, setLanguage] = useState("ge");
   const [theme, setTheme] = useState("light");
+  const [showAllPages, setShowAllPages] = useState(false);
+
   useEffect(() => {
     document.body.className = language;
   }, [language]);
+
+  const toggleShowAllPages = () => {
+    setShowAllPages((prev) => !prev);
+  };
+
   return (
     <div className="App">
       <LanguageContext.Provider value={{ language, setLanguage }}>
         <ThemeContext.Provider value={{ theme, setTheme }}>
           <Router>
-            <Routes>
-              <Route
-                path="/"
-                element={
-                  <Layout>
-                    <Home />
-                  </Layout>
-                }
-              />
-              <Route
-                path="/contact"
-                element={
-                  <Layout>
-                    <Contact />
-                  </Layout>
-                }
-              />
-              <Route
-                path="/about"
-                element={
-                  <Layout>
-                    <About />
-                  </Layout>
-                }
-              />
-              <Route
-                path="/services"
-                element={
-                  <Layout>
-                    <Services />
-                  </Layout>
-                }
-              />
-              <Route
-                path="/portfolio"
-                element={
-                  <Layout>
-                    <Portfolio />
-                  </Layout>
-                }
-              />
-            </Routes>
+            {showAllPages ? (
+              <Layout>
+                <Home />
+                <About />
+                <Services />
+                <Portfolio />
+                <Contact />
+              </Layout>
+            ) : (
+              <Routes>
+                <Route
+                  path="/"
+                  element={
+                    <Layout>
+                      <Home />
+                      <button
+                        className="homeArrow"
+                        onClick={toggleShowAllPages}
+                      >
+                        <img
+                          className="homeArrow"
+                          src={arrowHome}
+                          alt="arrow"
+                        />
+                      </button>
+                    </Layout>
+                  }
+                />
+                <Route
+                  path="/contact"
+                  element={
+                    <Layout>
+                      <Contact />
+                    </Layout>
+                  }
+                />
+                <Route
+                  path="/about"
+                  element={
+                    <Layout>
+                      <About />
+                    </Layout>
+                  }
+                />
+                <Route
+                  path="/services"
+                  element={
+                    <Layout>
+                      <Services />
+                    </Layout>
+                  }
+                />
+                <Route
+                  path="/portfolio"
+                  element={
+                    <Layout>
+                      <Portfolio />
+                    </Layout>
+                  }
+                />
+              </Routes>
+            )}
           </Router>
         </ThemeContext.Provider>
       </LanguageContext.Provider>

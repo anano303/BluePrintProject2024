@@ -1,14 +1,17 @@
 import "./Home.css";
 import { useContext, useEffect } from "react";
 import { TEXTS } from "../../Languages.js";
-import { ThemeContext } from "../../ThemeContext.js";
+// import { ThemeContext } from "../../ThemeContext.js";
 import { LanguageContext } from "../../LanguageContext.js";
 import { Link } from "react-router-dom";
+
+// import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
+
 const Home = () => {
   const { language } = useContext(LanguageContext);
 
-  const themeContext = useContext(ThemeContext);
-  const langContext = useContext(LanguageContext);
+  // const themeContext = useContext(ThemeContext);
+  // const langContext = useContext(LanguageContext);
 
   useEffect(() => {
     document.body.className = language;

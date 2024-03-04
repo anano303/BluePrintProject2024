@@ -3,6 +3,7 @@ import { useContext, useEffect } from "react";
 import { TEXTS } from "../../Languages.js";
 import { ThemeContext } from "../../ThemeContext.js";
 import { LanguageContext } from "../../LanguageContext.js";
+import { Element } from "react-scroll";
 import { Link } from "react-router-dom";
 
 const About = () => {
@@ -15,7 +16,7 @@ const About = () => {
     document.body.className = language;
   }, [language]);
   return (
-    <div className="aboutPage">
+    <Element name="about" className="aboutPage">
       <h3>
         {TEXTS[language].whoAreWe}
         <span> {TEXTS[language].ourVisionIs} </span>
@@ -24,7 +25,7 @@ const About = () => {
       <Link to="/services">
         <button className="aboutBtn">{TEXTS[language].more}</button>
       </Link>
-    </div>
+    </Element>
   );
 };
 export default About;

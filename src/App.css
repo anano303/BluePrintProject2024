@@ -8,6 +8,37 @@
   scrollbar-width: thin; /* "auto" or "thin" for Firefox */
   scrollbar-color: transparent transparent;
 }
+.homeArrow {
+  align-self: center;
+  position: absolute;
+  left: 50%;
+  top: 90%;
+}
+.homeArrow {
+  /* align-items: center;
+  align-self: center; */
+  background: transparent;
+  height: 2.25rem;
+  width: 2rem;
+  border-radius: 60px;
+  border: none;
+  cursor: pointer;
+  animation: arrowAnimation 0.5s ease-in-out infinite alternate;
+  z-index: 20;
+}
+
+#arrow_button img {
+  width: 100%;
+}
+
+@keyframes arrowAnimation {
+  from {
+    transform: translateY(0.313rem);
+  }
+  to {
+    transform: translateY(-0.625rem);
+  }
+}
 
 :root {
   --white-to-black: white;
