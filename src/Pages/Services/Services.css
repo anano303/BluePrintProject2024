@@ -153,7 +153,7 @@
 
 #black_arrow {
   transform: rotate(-90deg);
-  height: 70%;
+  height: 50%;
 }
 
 .grid-item:hover .projectOnHover {
@@ -291,5 +291,8 @@
   }
   .projectOnHover > button {
     width: 22%;
+  }
+  #black_arrow {
+    height: 70%;
   }
 }
