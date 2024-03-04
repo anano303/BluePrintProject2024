@@ -54,7 +54,7 @@
 }
 
 .grid-item > .img {
-  height: 70%;
+  height: 60%;
   background-size: cover;
   position: relative;
   transition-duration: 0.5s;
@@ -121,11 +121,6 @@
   display: inline-block;
 }
 
-.projectParagraph {
-  font-size: 1.32rem;
-  padding: 12px 0;
-}
-
 .grid-item {
   height: 670px;
   position: relative;
@@ -165,14 +160,15 @@
   height: 22%;
 }
 
-.projectOnHover {
+.img > .projectOnHover {
+  width: 100%;
+  height: 0%;
   position: absolute;
   bottom: 0;
-  width: 100%;
-  height: 20%;
-  background-color: rgba(229, 229, 72, 0.5);
-  opacity: 0;
-  transition: opacity 0.5s;
+  display: flex;
+  justify-content: flex-end;
+  transition-duration: 0.5s;
+  z-index: -1;
 }
 
 .grid-item:hover .projectOnHover {
@@ -196,22 +192,9 @@
   transform: rotate(180deg);
 }
 
-.aboutProject {
-  padding: 1rem;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  /* background-color: rgba(255, 255, 255, 0.8); */
-  /* transition: transform 0.5s;
-    transform: translateY(100%); */
-  padding: 25px 0 0 2vw;
-  width: 95%;
-}
-
-/* .aboutProject {
+.aboutProject:hover {
     transform: translateY(0);
-}  */
+} 
 
 .grid-item:hover {
   transform: translateY(0);
@@ -231,7 +214,7 @@
   color: #333;
   margin-bottom: 1rem;
   font-size: 1.32rem;
-  padding: 12px 0;
+  padding: 16px 0;
 }
 
 .grayText {
@@ -273,4 +256,37 @@
 .grid-item:hover .img {
   filter: grayscale(0%);
   -webkit-filter: grayscale(0%);
+}
+@media only screen and (max-width: 700px){
+  html {
+  font-size: clamp(7px, 3.757px + 1.0811vw, 8px);
+  margin: 0;
+  padding: 0;
+}
+.servicesPage span {
+
+  padding-left: 35px;
+}
+.aboutProject {
+  padding-top: 15px;
+  }
+
+.grid-item {
+  height: 40vh;
+  position: relative;
+  transition-duration: 0.5s;
+  background-color: black;
+  cursor: pointer;
+}
+.grid-item > .img {
+  height: 55%;
+}
+.projectParagraph {
+  font-size: 1.32rem;
+  padding: 4px;
+}
+.img > .ForProject {
+  margin-bottom: 2.5rem;
+  -webkit-text-stroke: 0.5px rgba(255, 255, 255, 1);
+}
 }

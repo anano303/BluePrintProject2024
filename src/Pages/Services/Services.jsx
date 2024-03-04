@@ -17,12 +17,13 @@ const Services = () => {
         <div className="grid-item">
           <div className="cut_left_corner project01 img">
             <h1 className="transparentText ForProject">01</h1>
+            
             <div className="projectOnHover">
-              <div className="Y"></div>
-
+              <div className="fullYellow"></div>
               <button type="button">
                 <img id="black_arrow" src={blackArrowBUtton} alt="arrow" />
               </button>
+
             </div>{" "}
           </div>
           <div className="aboutProject">
@@ -42,7 +43,7 @@ const Services = () => {
           <div className="cut_left_corner project02 img">
             <h1 className="transparentText ForProject">02</h1>
             <div className="projectOnHover">
-              <div className="Y"></div>
+              <div className="fullYellow"></div>
               <button type="button">
                 <img id="black_arrow" src={blackArrowBUtton} alt="arrow" />
               </button>
@@ -81,11 +82,12 @@ const Services = () => {
             </ul>
           </div>
         </div>
+
         <div className="grid-item">
           <div className="cut_left_corner project04 img">
             <h1 className="transparentText ForProject">04</h1>
             <div className="projectOnHover">
-              <div className="Y"></div>
+              <div className="fullYellow"></div>
               <button type="button">
                 <img id="black_arrow" src={blackArrowBUtton} alt="arrow" />
               </button>
@@ -93,6 +95,7 @@ const Services = () => {
           </div>
 
           <div className="aboutProject">
+            <div>
             <h3 className="projectCapture">პოლიგრაფია</h3>
             <p className="projectParagraph">
               Our collaborations with latest outdoors gear for their website.
@@ -101,6 +104,7 @@ const Services = () => {
             <ul className="projectDotText">
               <li>OUTDOOR</li>
             </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -109,8 +113,3 @@ const Services = () => {
 };
 
 export default Services;
-
-// const Services = () => {
-//   return <div className="ServicesPage">services page</div>;
-// };
-// export default Services;
