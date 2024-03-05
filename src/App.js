@@ -11,6 +11,7 @@ import Portfolio from "./Pages/Portfolio/Portfolio";
 import { LanguageContext } from "./LanguageContext";
 import { ThemeContext } from "./ThemeContext";
 import React, { useState, useEffect } from "react";
+
 import arrowHome from "./arrow_button.png";
 
 function App() {
@@ -25,12 +26,14 @@ function App() {
   const toggleShowAllPages = () => {
     setShowAllPages((prev) => !prev);
   };
-
+ 
   return (
     <div className="App">
       <LanguageContext.Provider value={{ language, setLanguage }}>
         <ThemeContext.Provider value={{ theme, setTheme }}>
           <Router>
+          
+
             {showAllPages ? (
               <Layout>
                 <Home />

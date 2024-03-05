@@ -8,7 +8,7 @@ import { useContext } from "react";
 import { TEXTS } from "../../Languages.js";
 import { LanguageContext } from "../../LanguageContext.js";
 
-const Navbar = () => {
+const Navbar = ({ setShowAllPages }) => {
   const [showLinks, setShowLinks] = useState(false);
   const [clickedLink, setClickedLink] = useState(null);
   const { language } = useContext(LanguageContext);
@@ -33,6 +33,7 @@ const Navbar = () => {
   const handleLinkClick = (link) => {
     setClickedLink(link);
     setShowLinks(false);
+    setShowAllPages(false);
   };
   const closeNavbar = () => {
     setShowLinks(false);
