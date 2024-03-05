@@ -82,14 +82,15 @@
   color: white;
 }
 
-.links li .aboutLi {
+/* .links li .aboutLi {
   color: #0000ff;
   text-decoration: line-through 1px;
   text-decoration-line: line-through;
   text-decoration-color: #0000ff;
-}
+} */
 
-.links li a:hover {
+.links li a:hover,
+.links li a.active {
   color: #0000ff;
   text-decoration: line-through 1px;
   text-decoration-line: line-through;

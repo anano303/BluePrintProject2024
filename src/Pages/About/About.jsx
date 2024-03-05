@@ -16,7 +16,7 @@ const About = () => {
     document.body.className = language;
   }, [language]);
   return (
-    <Element name="about" className="aboutPage">
+    <Element name="about" className="aboutPage" id="#about">
       <h3>
         {TEXTS[language].whoAreWe}
         <span> {TEXTS[language].ourVisionIs} </span>

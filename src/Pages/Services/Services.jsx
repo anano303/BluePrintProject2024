@@ -8,7 +8,7 @@ import { useContext } from "react";
 const Services = () => {
   const { language } = useContext(LanguageContext);
   return (
-    <div className="servicesPage">
+    <div className="servicesPage " id="services">
       <h1>
         {TEXTS[language].studio} <br />
         <span>{TEXTS[language].services}</span>
@@ -17,13 +17,11 @@ const Services = () => {
         <div className="grid-item">
           <div className="cut_left_corner project01 img">
             <h1 className="transparentText ForProject">01</h1>
-            
             <div className="projectOnHover">
               <div className="fullYellow"></div>
               <button type="button">
                 <img id="black_arrow" src={blackArrowBUtton} alt="arrow" />
               </button>
-
             </div>{" "}
           </div>
           <div className="aboutProject">
@@ -96,14 +94,14 @@ const Services = () => {
 
           <div className="aboutProject">
             <div>
-            <h3 className="projectCapture">პოლიგრაფია</h3>
-            <p className="projectParagraph">
-              Our collaborations with latest outdoors gear for their website.
-            </p>
-            <p className="grayText">BRAND IDENTITY</p>
-            <ul className="projectDotText">
-              <li>OUTDOOR</li>
-            </ul>
+              <h3 className="projectCapture">პოლიგრაფია</h3>
+              <p className="projectParagraph">
+                Our collaborations with latest outdoors gear for their website.
+              </p>
+              <p className="grayText">BRAND IDENTITY</p>
+              <ul className="projectDotText">
+                <li>OUTDOOR</li>
+              </ul>
             </div>
           </div>
         </div>

@@ -17,7 +17,7 @@ const Home = () => {
     document.body.className = language;
   }, [language]);
   return (
-    <div className="homePage">
+    <div className="homePage" id="#home">
       <div className="overlay"></div>
       <div className="homeText">
         <div className="h1Desktop">

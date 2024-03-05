@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 import closeImage from "../Icons/X.png";
@@ -9,7 +10,7 @@ import { LanguageContext } from "../../LanguageContext.js";
 
 const Navbar = () => {
   const [showLinks, setShowLinks] = useState(false);
-
+  const [clickedLink, setClickedLink] = useState(null);
   const { language } = useContext(LanguageContext);
 
   const langContext = useContext(LanguageContext);
@@ -28,6 +29,11 @@ const Navbar = () => {
   const toggleLinks = () => {
     setShowLinks(!showLinks);
   };
+
+  const handleLinkClick = (link) => {
+    setClickedLink(link);
+    setShowLinks(false);
+  };
   const closeNavbar = () => {
     setShowLinks(false);
   };
@@ -39,29 +45,64 @@ const Navbar = () => {
           <ul className="links">
             <ul>
               <li>
-                <Link to="/" onClick={closeNavbar}>
+                <Link
+                  to="/"
+                  onClick={() => {
+                    handleLinkClick("/");
+                    closeNavbar();
+                  }}
+                  className={clickedLink === "/" ? "active" : ""}
+                >
                   {" "}
                   {TEXTS[language].home}{" "}
                 </Link>
               </li>
 
               <li>
-                <Link to="/about" onClick={closeNavbar} className="aboutLi">
+                <Link
+                  to="/about"
+                  onClick={() => {
+                    handleLinkClick("/about");
+                    closeNavbar();
+                  }}
+                  className={clickedLink === "/about" ? "active" : ""}
+                >
                   {TEXTS[language].about}
                 </Link>
               </li>
               <li>
-                <Link to="/services" onClick={closeNavbar}>
+                <Link
+                  to="/services"
+                  onClick={() => {
+                    handleLinkClick("/services");
+                    closeNavbar();
+                  }}
+                  className={clickedLink === "/services" ? "active" : ""}
+                >
                   {TEXTS[language].services}
                 </Link>
               </li>
               <li>
-                <Link to="/portfolio" onClick={closeNavbar}>
+                <Link
+                  to="/portfolio"
+                  onClick={() => {
+                    handleLinkClick("/portfolio");
+                    closeNavbar();
+                  }}
+                  className={clickedLink === "/portfolio" ? "active" : ""}
+                >
                   {TEXTS[language].portfolio}
                 </Link>
               </li>
               <li>
-                <Link to="/contact" onClick={closeNavbar}>
+                <Link
+                  to="/contact"
+                  onClick={() => {
+                    handleLinkClick("/contact");
+                    closeNavbar();
+                  }}
+                  className={clickedLink === "/contact" ? "active" : ""}
+                >
                   {TEXTS[language].contact}
                 </Link>
               </li>
