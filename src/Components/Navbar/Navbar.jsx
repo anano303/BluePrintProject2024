@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 
 import { Link } from "react-router-dom";
+import { useLocation } from "react-router-dom";
+
 import "./Navbar.css";
 import closeImage from "../Icons/X.png";
 import toggleImage from "../Icons/Menu.png";
@@ -12,12 +14,16 @@ const Navbar = ({ setShowAllPages }) => {
   const [showLinks, setShowLinks] = useState(false);
   const [clickedLink, setClickedLink] = useState(null);
   const { language } = useContext(LanguageContext);
+  const location = useLocation();
 
   const langContext = useContext(LanguageContext);
 
   useEffect(() => {
     document.body.className = language;
   }, [language]);
+  useEffect(() => {
+    setClickedLink(location.pathname);
+  }, [location.pathname]);
 
   const geoOnClick = () => {
     langContext.setLanguage("ge");
@@ -35,6 +41,7 @@ const Navbar = ({ setShowAllPages }) => {
     setShowLinks(false);
     setShowAllPages(false);
   };
+
   const closeNavbar = () => {
     setShowLinks(false);
   };
