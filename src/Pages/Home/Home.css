@@ -36,7 +36,7 @@
 }
 .homePage h1 {
   /* font-family: "BPGNinoMtavruliNormal", sans-serif; */
-  font-size: 56px;
+  font-size: 46px;
   font-weight: 700;
   line-height: 56px;
   letter-spacing: -2px;
@@ -58,7 +58,7 @@
   text-decoration: line-through 1px;
   text-decoration-line: line-through;
   text-decoration-color: #0000ff;
-  font-size: 56px;
+  font-size: 46px;
   font-weight: 700;
   line-height: 56px;
   letter-spacing: -2px;
@@ -98,6 +98,12 @@
   color: white;
 }
 
+@media screen and (min-width: 768px) {
+  .homePage h1,
+  .homePage span {
+    font-size: 56px;
+  }
+}
 @media screen and (min-width: 768px) {
   .homePage {
     padding-top: 50px;
