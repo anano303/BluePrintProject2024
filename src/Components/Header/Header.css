@@ -17,7 +17,7 @@
 }
 
 .logo {
-  width: 100px;
+  width: 120px;
   height: auto;
   cursor: pointer;
   position: absolute;
@@ -112,9 +112,14 @@
     left: 82%;
   }
 } */
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 375px) {
   .logo {
     width: 160px;
+  }
+}
+@media screen and (max-height: 500px) {
+  .logo {
+    width: 120px;
   }
 }
 @media screen and (min-width: 768px) {

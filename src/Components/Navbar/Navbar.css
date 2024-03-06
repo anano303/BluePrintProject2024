@@ -156,7 +156,7 @@
   flex-direction: column;
 }
 
-@media screen and (min-width: 400px) {
+@media only screen and (min-width: 374px) {
   .links {
     font-size: 48px;
     font-weight: 700;
@@ -164,13 +164,18 @@
     margin-top: 115px;
     letter-spacing: -2px;
   }
-  @media screen and (max-height: 400px) {
-    .links ul {
-      gap: 8px;
-    }
-    .links {
-      gap: 0px;
-    }
+}
+@media only screen and (max-height: 500px) {
+  .links ul {
+    gap: 8px;
+  }
+  .links {
+    gap: 0px;
+    margin-top: 50px;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: -2px;
   }
 }
 
