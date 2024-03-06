@@ -18,6 +18,7 @@ export const TEXTS = {
     findOut: "აღმოაჩინე ",
     more: "გაიგე მეტი",
     studio: "სტუდიური",
+    order: "შეგვიკვეთე ახლავე",
   },
 
   en: {
@@ -39,5 +40,6 @@ export const TEXTS = {
     findOut: "Find out",
     more: "READ MORE",
     studio: "STUDIO",
+    order: "order now",
   },
 };

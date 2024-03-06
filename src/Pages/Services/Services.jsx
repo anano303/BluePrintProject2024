@@ -28,11 +28,15 @@ const Services = () => {
             <h3 className="projectCapture">სასაჩუქრე იდეები</h3>
             <p className="projectParagraph">
               {" "}
-              Our collaborations with latest outdoors gear for their website.
+              Unleash creativity with our curated gift ideas collection.
             </p>
-            <p className="grayText">WEB DESIGN / WEB DEVELOPMENT</p>
+            <p className="grayText">
+              Unique and personalized gift recommendations.
+            </p>
             <ul className="projectDotText">
-              <li>SIGN UP</li>
+              <a href="mailto:Hello@blueprint.ge">
+                <li> {TEXTS[language].order}</li>
+              </a>
             </ul>
           </div>
         </div>
@@ -50,11 +54,13 @@ const Services = () => {
           <div className="aboutProject">
             <h3 className="projectCapture">პროდაქშენი</h3>
             <p className="projectParagraph">
-              Our collaborations with latest outdoors gear for their website.
+              Bringing visions to life through production expertise.
             </p>
-            <p className="grayText">WEB DESIGN / WEB DEVELOPMENT</p>
+            <p className="grayText">Creative production solutions.</p>
             <ul className="projectDotText">
-              <li>WEATHER</li>
+              <a href="mailto:Hello@blueprint.ge">
+                <li> {TEXTS[language].order}</li>
+              </a>
             </ul>
           </div>
         </div>
@@ -72,11 +78,14 @@ const Services = () => {
           <div className="aboutProject">
             <h3 className="projectCapture">სოციალური ქსელების მართვა</h3>
             <p className="projectParagraph">
-              Our collaborations with latest outdoors gear for their website.
+              Navigating the digital landscape with effective social media
+              management.
             </p>
-            <p className="grayText">WEB DESIGN / WEB DEVELOPMENT</p>
+            <p className="grayText">Social media strategy and management.</p>
             <ul className="projectDotText">
-              <li>HIKING GEARS</li>
+              <a href="mailto:Hello@blueprint.ge">
+                <li> {TEXTS[language].order}</li>
+              </a>
             </ul>
           </div>
         </div>
@@ -96,11 +105,15 @@ const Services = () => {
             <div>
               <h3 className="projectCapture">პოლიგრაფია</h3>
               <p className="projectParagraph">
-                Our collaborations with latest outdoors gear for their website.
+                Crafting brand identities that speak volumes.
               </p>
-              <p className="grayText">BRAND IDENTITY</p>
+              <p className="grayText">
+                Unique and impactful brand identity designs.
+              </p>
               <ul className="projectDotText">
-                <li>OUTDOOR</li>
+                <a href="mailto:Hello@blueprint.ge">
+                  <li> {TEXTS[language].order}</li>
+                </a>
               </ul>
             </div>
           </div>

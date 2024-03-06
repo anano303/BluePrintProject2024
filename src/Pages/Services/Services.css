@@ -258,6 +258,9 @@
   filter: grayscale(0%);
   -webkit-filter: grayscale(0%);
 }
+.grayText {
+  text-transform: uppercase;
+}
 @media only screen and (max-width: 700px) {
   html {
     font-size: clamp(7px, 3.757px + 1.0811vw, 8px);
