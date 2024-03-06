@@ -57,9 +57,9 @@
   text-align: left;
   transition: max-height 3s ease;
   /* font-family: "BPGNinoMtavruliNormal", sans-serif; */
-  font-size: 48px;
+  font-size: 36px;
   font-weight: 700;
-  line-height: 56px;
+  line-height: 46px;
   letter-spacing: -2px;
   text-align: left;
 }
@@ -154,6 +154,13 @@
   display: flex;
   flex-direction: column;
 }
+@media screen and (min-width: 375px) {
+  .links {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+  }
+}
 @media screen and (min-width: 768px) {
   .navbar {
     width: 100%;
@@ -168,6 +175,7 @@
     transition: left 1s ease;
     opacity: 0.99;
     padding-left: 180px;
+    overflow-y: scroll;
   }
   .toggle-button img {
     transform: rotate(90deg);

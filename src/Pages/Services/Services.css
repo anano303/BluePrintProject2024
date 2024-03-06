@@ -188,7 +188,7 @@
   margin-right: 10px;
 }
 .projectOnHover img {
-  width: 30px;
+  /* width: 30px; */
   height: auto;
   transform: rotate(180deg);
 }
