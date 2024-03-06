@@ -261,6 +261,12 @@
 .grayText {
   text-transform: uppercase;
 }
+@media only screen and (max-width: 375px) {
+  .servicesPage h1,
+  .servicesPage span {
+    font-size: 46px;
+  }
+}
 @media only screen and (max-width: 700px) {
   html {
     font-size: clamp(7px, 3.757px + 1.0811vw, 8px);
