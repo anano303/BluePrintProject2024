@@ -155,21 +155,22 @@
   display: flex;
   flex-direction: column;
 }
-@media screen and (max-height: 400px) {
-  .links ul {
-    gap: 8px;
-  }
-  .links {
-    gap: 0px;
-  }
-}
+
 @media screen and (min-width: 400px) {
   .links {
     font-size: 48px;
     font-weight: 700;
     line-height: 56px;
     margin-top: 115px;
-    line-height: 46px;
+    letter-spacing: -2px;
+  }
+  @media screen and (max-height: 400px) {
+    .links ul {
+      gap: 8px;
+    }
+    .links {
+      gap: 0px;
+    }
   }
 }
 
