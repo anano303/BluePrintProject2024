@@ -18,13 +18,13 @@
   /* align-items: center;
   align-self: center; */
   background: transparent;
-  height: 2.25rem;
-  width: 2rem;
-  border-radius: 60px;
+  /* height: 2.25rem;
+  width: 2rem; */
+  /* border-radius: 60px; */
   border: none;
   cursor: pointer;
   animation: arrowAnimation 0.5s ease-in-out infinite alternate;
-  z-index: 20;
+  z-index: 2;
 }
 
 #arrow_button img {

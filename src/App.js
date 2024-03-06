@@ -26,14 +26,12 @@ function App() {
   const toggleShowAllPages = () => {
     setShowAllPages((prev) => !prev);
   };
- 
+
   return (
     <div className="App">
       <LanguageContext.Provider value={{ language, setLanguage }}>
         <ThemeContext.Provider value={{ theme, setTheme }}>
           <Router>
-          
-
             {showAllPages ? (
               <Layout>
                 <Home />
@@ -54,7 +52,7 @@ function App() {
                         onClick={toggleShowAllPages}
                       >
                         <img
-                          className="homeArrow"
+                          className="homeArrowImg"
                           src={arrowHome}
                           alt="arrow"
                         />
