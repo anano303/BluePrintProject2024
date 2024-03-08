@@ -277,11 +277,11 @@
     padding-left: 35px;
   }
   .aboutProject {
-    padding-top: 15px;
+    padding-top: 10px;
   }
 
   .grid-item {
-    height: 40vh;
+    height: 42vh;
     position: relative;
     transition-duration: 0.5s;
     background-color: black;
@@ -292,7 +292,7 @@
   }
   .projectParagraph {
     font-size: 1.32rem;
-    padding: 4px;
+    padding: 0px;
   }
   .img > .ForProject {
     margin-bottom: 2.5rem;
