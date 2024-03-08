@@ -165,13 +165,13 @@
     letter-spacing: -2px;
   }
 }
-@media only screen and (max-height: 500px) {
+@media only screen and (max-height: 670px) {
   .links ul {
     gap: 8px;
   }
   .links {
     gap: 0px;
-    margin-top: 50px;
+    margin-top: 60px;
     font-size: 36px;
     font-weight: 700;
     line-height: 40px;
