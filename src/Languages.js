@@ -19,6 +19,10 @@ export const TEXTS = {
     more: "გაიგე მეტი",
     studio: "სტუდიური",
     order: "შეგვიკვეთე ახლავე",
+    gift: "სასაჩუქრე იდეები",
+    production: "ფროდაქშენი",
+    socNet: "სოციალური ქსელების მართვა",
+    polygraph: "პოლიგრაფია",
   },
 
   en: {
@@ -41,5 +45,9 @@ export const TEXTS = {
     more: "READ MORE",
     studio: "STUDIO",
     order: "order now",
+    gift: "GIFT IDEAS",
+    production: "PRODUCTION",
+    socNet: "MANAGEMENT OF SOCIAL NETWORKS",
+    polygraph: "POLYGRAPH",
   },
 };

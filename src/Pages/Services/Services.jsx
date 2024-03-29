@@ -25,7 +25,7 @@ const Services = () => {
             </div>{" "}
           </div>
           <div className="aboutProject">
-            <h3 className="projectCapture">სასაჩუქრე იდეები</h3>
+            <h3 className="projectCapture">{TEXTS[language].gift}</h3>
             <p className="projectParagraph">
               {" "}
               Unleash creativity with our curated gift ideas collection.
@@ -52,7 +52,7 @@ const Services = () => {
             </div>
           </div>
           <div className="aboutProject">
-            <h3 className="projectCapture">პროდაქშენი</h3>
+            <h3 className="projectCapture">{TEXTS[language].production}</h3>
             <p className="projectParagraph">
               Bringing visions to life through production expertise.
             </p>
@@ -76,7 +76,7 @@ const Services = () => {
             </div>
           </div>
           <div className="aboutProject">
-            <h3 className="projectCapture">სოციალური ქსელების მართვა</h3>
+            <h3 className="projectCapture">{TEXTS[language].socNet}</h3>
             <p className="projectParagraph">
               Navigating the digital landscape with effective social media
               management.
@@ -103,7 +103,7 @@ const Services = () => {
 
           <div className="aboutProject">
             <div>
-              <h3 className="projectCapture">პოლიგრაფია</h3>
+              <h3 className="projectCapture">{TEXTS[language].polygraph}</h3>
               <p className="projectParagraph">
                 Crafting brand identities that speak volumes.
               </p>
