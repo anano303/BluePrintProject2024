@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "../Navbar/Navbar.jsx";
-import logo from "../Icons/logo anim.png";
+import logo from "../Icons/tetri.png";
 import "./Header.css";
 import { ThemeContext } from "../../ThemeContext.js";
 import { useContext } from "react";
