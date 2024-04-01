@@ -34,7 +34,7 @@ const Services = () => {
               Unique and personalized gift recommendations.
             </p>
             <ul className="projectDotText">
-              <a href="mailto:Hello@blueprint.ge">
+              <a href="mailto:Hello@blueprintstudio.ge">
                 <li> {TEXTS[language].order}</li>
               </a>
             </ul>
@@ -58,7 +58,7 @@ const Services = () => {
             </p>
             <p className="grayText">Creative production solutions.</p>
             <ul className="projectDotText">
-              <a href="mailto:Hello@blueprint.ge">
+              <a href="mailto:Hello@blueprintstudio.ge">
                 <li> {TEXTS[language].order}</li>
               </a>
             </ul>
@@ -83,7 +83,7 @@ const Services = () => {
             </p>
             <p className="grayText">Social media strategy and management.</p>
             <ul className="projectDotText">
-              <a href="mailto:Hello@blueprint.ge">
+              <a href="mailto:Hello@blueprintstudio.ge">
                 <li> {TEXTS[language].order}</li>
               </a>
             </ul>
@@ -111,7 +111,7 @@ const Services = () => {
                 Unique and impactful brand identity designs.
               </p>
               <ul className="projectDotText">
-                <a href="mailto:Hello@blueprint.ge">
+                <a href="mailto:Hello@blueprintstudio.ge">
                   <li> {TEXTS[language].order}</li>
                 </a>
               </ul>
