@@ -10,7 +10,6 @@ import Portfolio from "./Pages/Portfolio/Portfolio";
 import { LanguageContext } from "./LanguageContext";
 import { ThemeContext } from "./ThemeContext";
 import React, { useState, useEffect } from "react";
-import MetaTags from "./MetaTags";
 import arrowHome from "./arrow_button.png";
 
 function App() {
@@ -31,7 +30,6 @@ function App() {
       <LanguageContext.Provider value={{ language, setLanguage }}>
         <ThemeContext.Provider value={{ theme, setTheme }}>
           <Router>
-            <MetaTags />
             {showAllPages ? (
               <Layout>
                 <Home />
