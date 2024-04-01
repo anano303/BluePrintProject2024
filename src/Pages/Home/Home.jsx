@@ -4,24 +4,9 @@ import { TEXTS } from "../../Languages.js";
 // import { ThemeContext } from "../../ThemeContext.js";
 import { LanguageContext } from "../../LanguageContext.js";
 import { Link } from "react-router-dom";
-// import { useLocation } from "react-router-dom";
-
 // import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 
 const Home = () => {
-  // const location = useLocation();
-
-  // useEffect(() => {
-  //   if (location.pathname === "/") {
-  //     document.title = "BluePrintStudio"; // Set the title dynamically
-  //     const metaDescription = document.querySelector(
-  //       'meta[name="description"]'
-  //     );
-  //     if (metaDescription) {
-  //       metaDescription.setAttribute("content", "LET'S DO BUSINESS"); // Update the meta description
-  //     }
-  //   }
-  // }, [location.pathname]);
   const { language } = useContext(LanguageContext);
 
   // const themeContext = useContext(ThemeContext);
