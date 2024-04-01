@@ -15,10 +15,6 @@ import React, { useState, useEffect } from "react";
 import arrowHome from "./arrow_button.png";
 
 function App() {
-  useEffect(() => {
-    document.title = "BluePrintStudio"; // Change this to whatever title you want
-  }, []);
-
   const [language, setLanguage] = useState("ge");
   const [theme, setTheme] = useState("light");
   const [showAllPages, setShowAllPages] = useState(false);
