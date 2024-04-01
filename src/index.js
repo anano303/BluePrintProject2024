@@ -5,10 +5,6 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { LanguageProvider } from "./LanguageContext";
 
-document.title = "BluePrintStudio";
-document
-  .querySelector('meta[name="description"]')
-  .setAttribute("content", "LETS DO BUSINESS");
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
