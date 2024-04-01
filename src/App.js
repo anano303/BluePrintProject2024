@@ -1,5 +1,4 @@
 import "./App.css";
-
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Layout from "./Layouts/Layout";
 import Home from "./Pages/Home/Home";
@@ -11,7 +10,6 @@ import Portfolio from "./Pages/Portfolio/Portfolio";
 import { LanguageContext } from "./LanguageContext";
 import { ThemeContext } from "./ThemeContext";
 import React, { useState, useEffect } from "react";
-
 import arrowHome from "./arrow_button.png";
 
 function App() {
