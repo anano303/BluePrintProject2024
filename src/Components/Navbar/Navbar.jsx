@@ -1,12 +1,8 @@
-import React, { useState, useEffect } from "react";
-
-import { Link } from "react-router-dom";
-import { useLocation } from "react-router-dom";
-
+import React, { useState, useEffect, useContext } from "react";
+import { Link, useLocation } from "react-router-dom";
 import "./Navbar.css";
 import closeImage from "../Icons/X.png";
 import toggleImage from "../Icons/Menu.png";
-import { useContext } from "react";
 import { TEXTS } from "../../Languages.js";
 import { LanguageContext } from "../../LanguageContext.js";
 
@@ -21,6 +17,7 @@ const Navbar = ({ setShowAllPages }) => {
   useEffect(() => {
     document.body.className = language;
   }, [language]);
+
   useEffect(() => {
     setClickedLink(location.pathname);
   }, [location.pathname]);
@@ -36,11 +33,11 @@ const Navbar = ({ setShowAllPages }) => {
     setShowLinks(!showLinks);
   };
 
-  const handleLinkClick = (link) => {
-    setClickedLink(link);
-    setShowLinks(false);
-    setShowAllPages(false);
-  };
+  // const handleLinkClick = (link) => {
+  //   setClickedLink(link);
+  //   setShowLinks(false);
+  //   setShowAllPages(false);
+  // };
 
   const closeNavbar = () => {
     setShowLinks(false);
@@ -56,7 +53,7 @@ const Navbar = ({ setShowAllPages }) => {
                 <Link
                   to="/"
                   onClick={() => {
-                    handleLinkClick("/");
+                    // handleLinkClick("/");
                     closeNavbar();
                   }}
                   className={clickedLink === "/" ? "active" : ""}
@@ -70,7 +67,7 @@ const Navbar = ({ setShowAllPages }) => {
                 <Link
                   to="/about"
                   onClick={() => {
-                    handleLinkClick("/about");
+                    // handleLinkClick("/about");
                     closeNavbar();
                   }}
                   className={clickedLink === "/about" ? "active" : ""}
@@ -82,7 +79,7 @@ const Navbar = ({ setShowAllPages }) => {
                 <Link
                   to="/services"
                   onClick={() => {
-                    handleLinkClick("/services");
+                    // handleLinkClick("/services");
                     closeNavbar();
                   }}
                   className={clickedLink === "/services" ? "active" : ""}
@@ -94,7 +91,7 @@ const Navbar = ({ setShowAllPages }) => {
                 <Link
                   to="/portfolio"
                   onClick={() => {
-                    handleLinkClick("/portfolio");
+                    // handleLinkClick("/portfolio");
                     closeNavbar();
                   }}
                   className={clickedLink === "/portfolio" ? "active" : ""}
@@ -106,7 +103,7 @@ const Navbar = ({ setShowAllPages }) => {
                 <Link
                   to="/contact"
                   onClick={() => {
-                    handleLinkClick("/contact");
+                    // handleLinkClick("/contact");
                     closeNavbar();
                   }}
                   className={clickedLink === "/contact" ? "active" : ""}
