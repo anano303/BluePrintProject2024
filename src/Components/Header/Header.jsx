@@ -2,18 +2,9 @@ import React from "react";
 import Navbar from "../Navbar/Navbar.jsx";
 import logo from "../Icons/tetri.png";
 import "./Header.css";
-import { ThemeContext } from "../../ThemeContext.js";
-import { useContext } from "react";
 import { Link } from "react-router-dom";
 
 const Header = () => {
-  const themeContext = useContext(ThemeContext);
-  const lightOnClick = () => {
-    themeContext.setTheme("light");
-  };
-  const darkOnClick = () => {
-    themeContext.setTheme("dark");
-  };
   return (
     <div className="headerPage">
       <Link to="/">

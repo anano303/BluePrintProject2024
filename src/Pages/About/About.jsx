@@ -1,7 +1,6 @@
 import "./About.css";
 import { useContext, useEffect } from "react";
 import { TEXTS } from "../../Languages.js";
-import { ThemeContext } from "../../ThemeContext.js";
 import { LanguageContext } from "../../LanguageContext.js";
 import { Element } from "react-scroll";
 import { Link } from "react-router-dom";
